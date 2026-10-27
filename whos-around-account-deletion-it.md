@@ -17,9 +17,9 @@ L'eliminazione è immediata e non si può annullare. Vengono rimossi:
 - il profilo e la foto profilo;
 - gli eventi che hai creato, con le loro chat e richieste di partecipazione;
 - le tue partecipazioni e richieste agli eventi di altri;
-- le tue chat private e i messaggi;
+- le tue chat private; nelle chat di gruppo i tuoi messaggi risultano eliminati e le tue foto vengono rimosse;
 - eventi salvati, notifiche, blocchi e dispositivi registrati;
-- le segnalazioni che hai inviato e le valutazioni date o ricevute;
+- le valutazioni date o ricevute e le notifiche che ti nominano;
 - i dati dell'abbonamento Premium salvati da Who's Around.
 
 ## Abbonamenti e acquisti
@@ -32,7 +32,7 @@ Chiedi l'eliminazione scrivendo a **hoenngames@gmail.com** dall'indirizzo che us
 
 ## Cosa può essere conservato
 
-Alcune informazioni limitate possono essere conservate se richiesto dalla legge, per risolvere controversie o per prevenire frodi e abusi (per esempio, le segnalazioni che altri utenti hanno inviato sull'account). I dati conservati in modo indipendente da Google, Apple o altri fornitori seguono le loro regole.
+Alcune informazioni limitate possono essere conservate se richiesto dalla legge, per risolvere controversie o per prevenire frodi e abusi (per esempio, le segnalazioni che hai inviato e quelle che altri utenti hanno inviato sull'account, che i moderatori devono poter esaminare). I dati conservati in modo indipendente da Google, Apple o altri fornitori seguono le loro regole.
 
 ## Contatti
 

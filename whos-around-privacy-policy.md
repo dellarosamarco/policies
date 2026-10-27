@@ -12,7 +12,7 @@ Marco Della Rosa, Italy · hoenngames@gmail.com
 
 - **Account:** email and password (the password is handled by Firebase Authentication; we never see it).
 - **Profile:** name, date of birth (to check you are an adult and show your age), photo, bio, city, interests.
-- **Location:** with your permission we use the device location to show nearby events and distances. We don't store your live location. If you create an event "around an area" we store only an approximate position (about 100 m); for venue events we store the venue's position.
+- **Location:** with your permission we use the device location to show nearby events and distances. We don't store your live location. If you create an event "around an area" we store only an approximate position (about 1 km); for venue events we store the venue's position.
 - **Activity:** events you create, join requests, chat messages, favourites, ratings, reports and blocks.
 - **Device:** push notification token, platform, language.
 - **Purchases:** if you subscribe to Premium, subscription data from the store (not your payment details).

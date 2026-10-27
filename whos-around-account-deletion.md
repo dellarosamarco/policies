@@ -17,9 +17,9 @@ Deletion is immediate and cannot be undone. It removes:
 - your profile and profile photo;
 - the events you created, with their chats and join requests;
 - your participations and join requests in other people's events;
-- your private chats and messages;
+- your private chats; in group chats your messages are shown as deleted and your photos removed;
 - your saved events, notifications, blocks and device registrations;
-- the reports you filed and the ratings you gave or received;
+- the ratings you gave or received and the notifications that mention you;
 - premium entitlement data stored by Who's Around.
 
 ## Subscriptions and purchases
@@ -32,7 +32,7 @@ Request deletion by e-mail at **hoenngames@gmail.com** from the address you use 
 
 ## What may be retained
 
-Limited information may be retained where required by law, to resolve disputes, or to prevent fraud and abuse (for example, reports other users filed about the account). Data held independently by Google, Apple or other providers is governed by their own policies.
+Limited information may be retained where required by law, to resolve disputes, or to prevent fraud and abuse (for example, the reports you filed and those other users filed about the account, which moderators need to review). Data held independently by Google, Apple or other providers is governed by their own policies.
 
 ## Contact
 
