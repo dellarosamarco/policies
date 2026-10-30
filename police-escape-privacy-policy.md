@@ -12,8 +12,8 @@ This Privacy Policy explains what information Hoenn Games ("we", "us") and our p
 - We use **Google Firebase** for an anonymous player ID, cloud save, a global leaderboard, game statistics (Firebase Analytics) and remote game settings (Remote Config).
 - In-app purchases are processed by **Google Play**. We never see your payment card details.
 - The game never asks for your name, e-mail, phone number, contacts, photos or precise location.
-- On first launch the game asks for your **year of birth**. Players **under 13** never get ads or analytics. In the **EEA, the UK and Switzerland**, players under 16 never get ads or analytics either, and adults are asked for consent before personalised ads or analytics are used.
-- You can change or withdraw your choices at any time in **Settings > Privacy**.
+- On first launch the game asks for your **year of birth**. Players **under 13** never get ads or analytics. Players **under 16 never get personalised ads, anywhere**; in the **EEA, the UK and Switzerland** they get no ads or analytics at all, and adults there are asked for consent before personalised ads or analytics are used.
+- You can change or withdraw your choices at any time in **Settings > Privacy**, where you also find your **user ID** and a **Delete my data** button.
 
 ---
 
@@ -39,7 +39,7 @@ The ad networks and service providers listed in section 5 process some data unde
 
 | Data | Details |
 |---|---|
-| **Anonymous Firebase user ID** | A random identifier created by Firebase Authentication (anonymous sign-in). It is not linked to your name, e-mail or Google account. |
+| **Anonymous Firebase user ID** | A random identifier created by Firebase Authentication (anonymous sign-in). It is not linked to your name, e-mail or Google account. You can see and copy it in **Settings > Privacy** ("User ID for privacy requests"). |
 | **Game progress (cloud save)** | A copy of the game progress listed in 2.1 (including your purchase records, see below) and the time of the last save, stored in Cloud Firestore under your anonymous user ID. |
 | **Leaderboard entry** | Your best chase score, a display name generated automatically from your anonymous user ID (for example "Driver 7F3A") and the time of the last update. **This entry is visible to other players** in the global leaderboard. |
 | **Purchase history and tokens** | The products you bought, the Google Play purchase tokens (used so each purchase is credited only once) and the items credited. They are stored on your device and in your cloud save. |
@@ -56,7 +56,7 @@ When ads are allowed (see section 4), the AppLovin MAX SDK and the mediated ad n
 - your **IP address** and the **approximate location** derived from it (country/city level; the App does not request precise location);
 - **ad interaction data** (ads requested, shown, clicked, watched to the end, rewards) and app information.
 
-With personalised ads switched **off**, the game tells AppLovin that you have **not** consented to personalised ads and that your data must **not be sold or shared** ("do not sell"). The networks then serve non-personalised ads, but still need some technical data (such as IP address and device information) to deliver the ad, cap how often it is shown, measure it and prevent fraud.
+With personalised ads switched **off**, and always for players under 16, the game tells AppLovin that you have **not** consented to personalised ads and that your data must **not be sold or shared** ("do not sell"). The networks then serve non-personalised ads, but still need some technical data (such as IP address and device information) to deliver the ad, cap how often it is shown, measure it and prevent fraud.
 
 ### 2.4 Data processed by Google Play
 
@@ -94,13 +94,16 @@ Where we rely on legitimate interest, you can object at any time (see section 8)
 - **Under 13 (everywhere):** the ad SDKs are never started and analytics never collects data.
 - **EEA, UK and Switzerland, under 16:** the ad SDKs are never started and analytics never collects data.
 - **EEA, UK and Switzerland, 16 and over:** a consent dialog explains how ads and statistics use your data. You can **Accept**, **Refuse**, or open **Details and partners** to see the purposes and the list of partners and to choose personalised ads and game statistics **separately**. If you refuse, you still see ads, but not personalised ones, and no statistics are collected. Nothing is enabled by default.
-- **Outside the EEA, UK and Switzerland (13 and over):** personalised ads and game statistics are on by default, and you can switch either of them off at any time (opt-out).
+- **Outside the EEA, UK and Switzerland, 13 to 15:** ads are shown but are **never personalised**, and no advertising data is used in Firebase Analytics (ad storage, ad user data and ad personalisation signals are always denied). Game statistics are on by default and can be switched off at any time in Settings > Privacy.
+- **Outside the EEA, UK and Switzerland, 16 and over:** personalised ads and game statistics are on by default, and you can switch either of them off at any time (opt-out).
 
 If the game cannot tell whether you are in the EEA, UK or Switzerland, it treats you as if you were and shows the consent dialog.
 
 **Changing or withdrawing your choice.** Open **Settings > Privacy** in the game. There you can switch **Personalised ads** and **Game statistics** on or off separately, or use **Accept all** / **Refuse all**, then **Save my choices**. The page also shows the date and version of your last choice and a link to this policy. Withdrawing consent does not affect processing that took place before.
 
 A new choice applies to new ad requests and to analytics straight away. An ad that was already downloaded under your previous choice is not shown; the ad networks pick up the new choice for new ads (at the latest at the next start of the game).
+
+**Delete my data.** Settings > Privacy also has a **Delete my data** button, described in section 8.
 
 **Advertising ID.** You can also reset or delete your Android advertising ID, or opt out of ads personalisation, in your device settings (on most devices: **Settings > Privacy > Ads** or **Settings > Google > Ads**).
 
@@ -126,9 +129,9 @@ Our providers may process data outside the European Economic Area, the UK and Sw
 ## 7. How long we keep data
 
 - **Data on your device** (progress, settings, age band, consent record, ad pacing): until you uninstall the App or clear its data. The consent record keeps at most the last 30 choices.
-- **Cloud save and purchase records in your cloud save**: for as long as your anonymous account exists, or until you ask us to delete them.
-- **Leaderboard entry**: for as long as your anonymous account exists, or until you ask us to delete it.
-- **Firebase Analytics data**: event-level data is kept for the retention period set in our Firebase project, no longer than 14 months; aggregated reports that do not identify you may be kept longer.
+- **Cloud save and purchase records in your cloud save**: for as long as your anonymous account exists, or until you delete them with **Delete my data** or ask us to delete them.
+- **Leaderboard entry**: for as long as your anonymous account exists, or until you delete it with **Delete my data** or ask us to delete it.
+- **Firebase Analytics data**: event-level data is kept for the retention period set in our Firebase project, no longer than 14 months; aggregated reports that do not identify you may be kept longer. **Delete my data** resets the analytics identifier on your device, so events already sent can no longer be linked to it and are deleted at the end of the retention period.
 - **Data collected by the ad networks and by Google Play**: according to each provider's own retention policy (see section 5).
 
 ## 8. Your rights (EEA, UK and Switzerland)
@@ -144,9 +147,18 @@ Under the GDPR, the UK GDPR and the Swiss data protection law you have the right
 - **withdraw consent** at any time, without affecting processing done before (see section 4);
 - **lodge a complaint** with a data protection supervisory authority, in particular in the country where you live or work (in the UK: the Information Commissioner's Office).
 
-To exercise these rights, write to **[hoenngames@gmail.com](mailto:hoenngames@gmail.com)**. Because we do not know your name or e-mail, please tell us the leaderboard name shown for you in the game (for example "Driver 7F3A") and, if possible, your best score and approximately when you last played, so we can find your data. We will answer within one month. Uninstalling the App deletes all data stored on your device; the anonymous cloud save and leaderboard entry are deleted when you ask us.
+**Delete my data in the App.** Open **Settings > Privacy** and tap **Delete my data**, then confirm. The game:
 
-For data collected by the ad networks, you can also contact them directly through the links in section 5.
+- deletes your **cloud save** and your **leaderboard entry** from our servers (if the server cannot be reached, nothing is changed and you can try again);
+- turns the cloud save and leaderboard **off on this device**, so nothing is uploaded again;
+- **resets the Firebase Analytics data** and identifier on your device and stops analytics;
+- deletes your **privacy choices**, their log and the ad frequency counters on your device; the age question (and, in the EEA/UK/CH, the consent dialog) is shown again.
+
+Your game progress stays on your device; uninstalling the App or clearing its data deletes it.
+
+**Requests by e-mail.** To exercise any other right, or if you cannot use the button, write to **[hoenngames@gmail.com](mailto:hoenngames@gmail.com)**. Because we do not know your name or e-mail, please include your **user ID**: open **Settings > Privacy**, find **User ID for privacy requests** and tap the copy icon next to it (it is shown only while the game is online and connected to the cloud save). We will answer within one month.
+
+**Data held by the ad networks.** Data already collected by AppLovin, Unity Ads, Liftoff/Vungle and Mintegral is not stored by us and **cannot be deleted from the App**: please send your request to them directly through the links in section 5, and reset or delete your advertising ID in your device settings.
 
 ## 9. California and other US state privacy rights (CCPA/CPRA)
 
@@ -161,7 +173,11 @@ If you are a California resident (or a resident of another US state with a simil
 
 **"Sale" and "sharing".** Making the advertising ID and device data available to the ad networks for personalised ads may be considered a "sale" or "sharing" of personal information under the CCPA/CPRA. We do not sell personal information for money.
 
-**How to opt out:** open **Settings > Privacy** in the game and switch **Personalised ads** off, then **Save my choices**. The game then tells AppLovin and its networks that your data must not be sold or shared. You can also e-mail us at [hoenngames@gmail.com](mailto:hoenngames@gmail.com) to exercise any of the rights above; you may use an authorised agent. We will verify your request using the information described in section 8.
+**Consumers under 16.** We do not sell or share the personal information of consumers under 16: for every player who states an age under 16 the game always tells AppLovin and its networks that there is no consent to personalised ads and that the data must not be sold or shared, and ad signals in Firebase Analytics are denied. There is no opt-in for them in the App.
+
+**How to opt out (16 and over):** open **Settings > Privacy** in the game and switch **Personalised ads** off, then **Save my choices**. The game then tells AppLovin and its networks that your data must not be sold or shared.
+
+**Deletion and other requests:** use **Delete my data** in Settings > Privacy (see section 8), or e-mail us at [hoenngames@gmail.com](mailto:hoenngames@gmail.com) with your user ID from Settings > Privacy; you may use an authorised agent. Data already collected by the ad networks must be requested from them (section 5).
 
 ## 10. Children
 
@@ -169,8 +185,9 @@ The game asks for the player's year of birth before starting any ad network or a
 
 - **Players under 13** never get ads or analytics, in any country. The ad SDKs are not started and no advertising ID is collected by them.
 - **In the EEA, the UK and Switzerland, players under 16** (the highest age of digital consent in those countries) never get ads or analytics either.
+- **Elsewhere, players aged 13 to 15** see ads, but **never personalised ones**, and no advertising data is used in analytics.
 
-For these players the game still uses the anonymous Firebase user ID, the cloud save, the leaderboard (with the automatically generated name) and Remote Config, as described in section 2.2, so that the game works. We do not knowingly collect any other personal information from children. If you are a parent or guardian and believe your child's data has been collected in a way that is not described here, contact us and we will delete it.
+For these players the game still uses the anonymous Firebase user ID, the cloud save, the leaderboard (with the automatically generated name) and Remote Config, as described in section 2.2, so that the game works. We do not knowingly collect any other personal information from children. If you are a parent or guardian and believe your child's data has been collected in a way that is not described here, use **Delete my data** in Settings > Privacy or contact us and we will delete it.
 
 ## 11. Security
 
