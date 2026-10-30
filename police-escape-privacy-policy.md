@@ -1,10 +1,10 @@
-# Privacy Policy – Police Escape: Drive Game
+# Privacy Policy – Police Escape: Car Chase Game
 
 **Last updated:** 30 October 2026
-**App:** Police Escape: Drive Game (Android package `com.MaarcoDev.PoliceEscape`)
+**App:** Police Escape: Car Chase Game (Italian store listing: "Police Escape: Inseguimento"; Android package `com.MaarcoDev.PoliceEscape`)
 **Contact:** [hoenngames@gmail.com](mailto:hoenngames@gmail.com)
 
-This Privacy Policy explains what information Hoenn Games ("we", "us") and our partners process when you play **Police Escape: Drive Game** (the "App" or the "game"), why we process it, and the choices and rights you have.
+This Privacy Policy explains what information Hoenn Games ("we", "us") and our partners process when you play **Police Escape: Car Chase Game** (the "App" or the "game"), why we process it, and the choices and rights you have.
 
 **In short:**
 
