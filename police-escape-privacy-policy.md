@@ -8,7 +8,7 @@ This Privacy Policy explains what information Hoenn Games ("we", "us") and our p
 
 **In short:**
 
-- The game is free and shows ads (rewarded videos and interstitials between runs) through **AppLovin MAX**, with **Unity Ads**, **Liftoff Monetize (Vungle)** and **Mintegral** as ad networks. We do **not** use Google AdMob.
+- The game is free and shows ads (rewarded videos and interstitials between runs) through **Unity LevelPlay** (Unity's ad mediation platform), with **Unity Ads** as the ad network. We do **not** use Google AdMob.
 - We use **Google Firebase** for an anonymous player ID, cloud save, a global leaderboard, game statistics (Firebase Analytics) and remote game settings (Remote Config).
 - In-app purchases are processed by **Google Play**. We never see your payment card details.
 - The game never asks for your name, e-mail, phone number, contacts, photos or precise location.
@@ -49,14 +49,14 @@ The ad networks and service providers listed in section 5 process some data unde
 
 ### 2.3 Data processed by the ad networks
 
-When ads are allowed (see section 4), the AppLovin MAX SDK and the mediated ad networks (Unity Ads, Liftoff Monetize/Vungle, Mintegral) may collect from your device:
+When ads are allowed (see section 4), the Unity LevelPlay mediation SDK and the Unity Ads network may collect from your device:
 
 - the **advertising ID (Android AAID)** and other device identifiers;
 - **device information** (model, manufacturer, operating system, language, screen, network type, carrier, battery and similar technical data);
 - your **IP address** and the **approximate location** derived from it (country/city level; the App does not request precise location);
 - **ad interaction data** (ads requested, shown, clicked, watched to the end, rewards) and app information.
 
-With personalised ads switched **off**, and always for players under 16, the game tells AppLovin that you have **not** consented to personalised ads and that your data must **not be sold or shared** ("do not sell"). The networks then serve non-personalised ads, but still need some technical data (such as IP address and device information) to deliver the ad, cap how often it is shown, measure it and prevent fraud.
+With personalised ads switched **off**, and always for players under 16, the game sends Unity LevelPlay the privacy signals **"no GDPR consent"** and **"do not sell"** (CCPA): you have not consented to personalised ads and your data must **not be sold or shared**. The ad network then serves non-personalised ads, but still need some technical data (such as IP address and device information) to deliver the ad, cap how often it is shown, measure it and prevent fraud.
 
 ### 2.4 Data processed by Google Play
 
@@ -101,7 +101,7 @@ If the game cannot tell whether you are in the EEA, UK or Switzerland, it treats
 
 **Changing or withdrawing your choice.** Open **Settings > Privacy** in the game. There you can switch **Personalised ads** and **Game statistics** on or off separately, or use **Accept all** / **Refuse all**, then **Save my choices**. The page also shows the date and version of your last choice and a link to this policy. Withdrawing consent does not affect processing that took place before.
 
-A new choice applies to new ad requests and to analytics straight away. An ad that was already downloaded under your previous choice is not shown; the ad networks pick up the new choice for new ads (at the latest at the next start of the game).
+A new choice applies to ads and analytics straight away: ads already downloaded under your previous choice are discarded and not shown.
 
 **Delete my data.** Settings > Privacy also has a **Delete my data** button, described in section 8.
 
@@ -113,12 +113,11 @@ When we change the partners or purposes listed in the consent dialog, players in
 
 | Provider | What it does in the App | Privacy policy |
 |---|---|---|
-| **AppLovin** (AppLovin MAX) | Ad mediation and ads | [applovin.com/privacy](https://www.applovin.com/privacy/) |
-| **Unity Technologies** (Unity Ads) | Ad network (via AppLovin MAX) | [Unity game player and app user privacy policy](https://unity.com/legal/game-player-and-app-user-privacy-policy) |
-| **Liftoff** (Liftoff Monetize, formerly Vungle) | Ad network (via AppLovin MAX) | [liftoff.io/privacy-policy](https://liftoff.io/privacy-policy/) |
-| **Mintegral** | Ad network (via AppLovin MAX) | [mintegral.com/en/privacy](https://www.mintegral.com/en/privacy) |
+| **Unity Technologies** (Unity LevelPlay, Unity Ads) | Ad mediation (LevelPlay) and ads (Unity Ads) | [Unity game player and app user privacy policy](https://unity.com/legal/game-player-and-app-user-privacy-policy) |
 | **Google** (Firebase Authentication, Cloud Firestore, Firebase Analytics, Remote Config) | Anonymous player ID, cloud save, leaderboard, game statistics, remote settings | [Google Privacy Policy](https://policies.google.com/privacy) · [Privacy and security in Firebase](https://firebase.google.com/support/privacy) |
 | **Google** (Google Play, Google Play Billing) | App distribution and in-app purchases | [Google Privacy Policy](https://policies.google.com/privacy) |
+
+Unity Ads is currently the only ad network in the game. If we add other ad networks through Unity LevelPlay, we will list them here before they are enabled and players in the EEA, UK and Switzerland will be asked for their consent again.
 
 Firebase acts as our data processor for the cloud save, leaderboard, analytics and Remote Config. The ad networks generally act as independent controllers for the data they collect through their SDKs; please read their policies to learn how they use it and how to exercise your rights with them.
 
@@ -158,7 +157,7 @@ Your game progress stays on your device; uninstalling the App or clearing its da
 
 **Requests by e-mail.** To exercise any other right, or if you cannot use the button, write to **[hoenngames@gmail.com](mailto:hoenngames@gmail.com)**. Because we do not know your name or e-mail, please include your **user ID**: open **Settings > Privacy**, find **User ID for privacy requests** and tap the copy icon next to it (it is shown only while the game is online and connected to the cloud save). We will answer within one month.
 
-**Data held by the ad networks.** Data already collected by AppLovin, Unity Ads, Liftoff/Vungle and Mintegral is not stored by us and **cannot be deleted from the App**: please send your request to them directly through the links in section 5, and reset or delete your advertising ID in your device settings.
+**Data held by the ad networks.** Data already collected by Unity (LevelPlay and Unity Ads) is not stored by us and **cannot be deleted from the App**: please send your request to Unity directly through the link in section 5, and reset or delete your advertising ID in your device settings.
 
 ## 9. California and other US state privacy rights (CCPA/CPRA)
 
@@ -173,9 +172,9 @@ If you are a California resident (or a resident of another US state with a simil
 
 **"Sale" and "sharing".** Making the advertising ID and device data available to the ad networks for personalised ads may be considered a "sale" or "sharing" of personal information under the CCPA/CPRA. We do not sell personal information for money.
 
-**Consumers under 16.** We do not sell or share the personal information of consumers under 16: for every player who states an age under 16 the game always tells AppLovin and its networks that there is no consent to personalised ads and that the data must not be sold or shared, and ad signals in Firebase Analytics are denied. There is no opt-in for them in the App.
+**Consumers under 16.** We do not sell or share the personal information of consumers under 16: for every player who states an age under 16 the game always sends Unity LevelPlay the "no GDPR consent" and "do not sell" signals, and ad signals in Firebase Analytics are denied. There is no opt-in for them in the App.
 
-**How to opt out (16 and over):** open **Settings > Privacy** in the game and switch **Personalised ads** off, then **Save my choices**. The game then tells AppLovin and its networks that your data must not be sold or shared.
+**How to opt out (16 and over):** open **Settings > Privacy** in the game and switch **Personalised ads** off, then **Save my choices**. The game then sends Unity LevelPlay the "do not sell" signal, so your data is not sold or shared for personalised ads.
 
 **Deletion and other requests:** use **Delete my data** in Settings > Privacy (see section 8), or e-mail us at [hoenngames@gmail.com](mailto:hoenngames@gmail.com) with your user ID from Settings > Privacy; you may use an authorised agent. Data already collected by the ad networks must be requested from them (section 5).
 
