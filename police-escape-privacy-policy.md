@@ -1,6 +1,6 @@
 # Privacy Policy – Police Escape: Car Chase Game
 
-**Last updated:** 8 November 2026
+**Last updated:** 10 November 2026
 **App:** Police Escape: Car Chase Game (Italian store listing: "Police Escape: Inseguimento"; Android package `com.MaarcoDev.PoliceEscape`)
 **Contact:** [hoenngames@gmail.com](mailto:hoenngames@gmail.com)
 
@@ -9,10 +9,11 @@ This Privacy Policy explains what information Hoenn Games ("we", "us") and our p
 **In short:**
 
 - The game is free and **has no ads**. It does not include any advertising SDK and does not use the advertising ID.
-- We use **Google Firebase** for an anonymous player ID, cloud save, a global leaderboard, game statistics (Firebase Analytics) and remote game settings (Remote Config).
-- In-app purchases are processed by **Google Play**. We never see your payment card details.
+- We use **Google Firebase** for an anonymous player ID, cloud save, a global leaderboard, game statistics (Firebase Analytics), remote game settings (Remote Config) and crash and performance reports (Firebase Crashlytics).
+- In-app purchases and the optional weekly **VIP subscription** are processed and managed by **Google Play**. We never see your payment card details; you cancel the subscription in Google Play.
 - The game never asks for your name, e-mail, phone number, contacts, photos or precise location.
-- On first launch the game asks for your **year of birth**. Players **under 13** never get analytics; in the **EEA, the UK and Switzerland** players under 16 never get analytics either, and adults there are asked for consent before analytics are used.
+- You can play your **first run** straight away. **After the first run** the game asks for your **year of birth** (and, in the EEA/UK/CH, for consent). The game statistics of that first run are kept **only on your phone, in memory**, and are sent **only if you then allow analytics**; otherwise they are deleted. Players **under 13** never get analytics; in the **EEA, the UK and Switzerland** players under 16 never get analytics either, and adults there are asked for consent before analytics are used.
+- **Reminders** (free gift and daily reward) are **local notifications**: they are scheduled on your phone, only if you say yes, and no data is sent to anyone for them.
 - You can change or withdraw your choices at any time in **Settings > Privacy**, where you also find your **user ID** and a **Delete my data** button.
 
 ---
@@ -33,6 +34,9 @@ The service providers listed in section 5 process data on our behalf, under thei
 - **Age band**: the year of birth you enter is used only to work out an age band ("under 13", "13–15 in the EEA/UK/CH", or "adult"). **Only the band is stored, never the year of birth.**
 - **Consent record**: the date and time of each privacy choice, the version of the consent text you saw, your choice about game statistics (analytics), where you made the choice, your age band and whether you were treated as being in the EEA/UK/CH. This record stays on your device so the game can apply your choice and show you when you last made it.
 - **Region check**: to decide whether to show the consent dialog, the game looks at your device's language/region settings and time zone. This check happens on the device; nothing is sent over the network for it.
+- **Game statistics of the first run (before your choice)**: the events of the run you play before answering the age/consent questions are kept **only in the phone's memory**. They are sent to Firebase Analytics only if your answer allows analytics; if it does not, they are deleted. They are also lost if the game is closed before you answer.
+- **Device capabilities**: the amount of memory, the Android version, the number of processor cores and the graphics chip (GPU) model are read once and stored on the device, to choose suitable graphics settings for your phone.
+- **Reminder preference and schedule**: whether you agreed to reminders and the reminders scheduled on your phone (for example "your free gift is ready"). These are **local notifications**, created and shown by your phone; there is no push notification server and nothing is sent over the network for them.
 ### 2.2 Data processed by us through Google Firebase
 
 | Data | Details |
@@ -41,7 +45,8 @@ The service providers listed in section 5 process data on our behalf, under thei
 | **Game progress (cloud save)** | A copy of the game progress listed in 2.1 (including your purchase records, see below) and the time of the last save, stored in Cloud Firestore under your anonymous user ID. |
 | **Leaderboard entry** | Your best chase score, a display name generated automatically from your anonymous user ID (for example "Driver 7F3A") and the time of the last update. **This entry is visible to other players** in the global leaderboard. |
 | **Purchase history and tokens** | The products you bought, the Google Play purchase tokens (used so each purchase is credited only once) and the items credited. They are stored on your device and in your cloud save. |
-| **Usage data / game events** (Firebase Analytics, only with your consent or, outside the EEA/UK/CH, unless you opt out) | Events such as run start and end (game mode, car, duration, score, coins, how the run ended), shop opened, in-app purchase (product, price, currency), starter offer shown and your consent choice (as statistics). |
+| **Usage data / game events** (Firebase Analytics, only with your consent or, outside the EEA/UK/CH, unless you opt out) | Events such as first launch, session number, tutorial started/completed, run start and end (game mode, car, run number, duration, score, coins, how the run ended), daily reward and free gift collected, shop opened, offer shown, in-app purchase and subscription (product, price, currency), whether you accepted reminders, loading times and game freezes (duration, screen, graphics level), your player level and VIP status, and your consent choice (as statistics). |
+| **Crash and performance reports** (Firebase Crashlytics) | When the game crashes, has an error or freezes for a few seconds: the technical details of the problem (stack trace, the screen of the game you were on), app version, device model, operating system version, memory, graphics chip model and graphics level, and a Crashlytics installation identifier. They contain no game statistics and nothing you typed. |
 | **Device and app information** | Collected automatically by the Firebase SDKs: for example device model, operating system version, app version, language, country/region derived from the IP address, Firebase installation identifiers. |
 | **Remote Config** | The game downloads remote settings (for example when special offers are shown). To do this the Firebase SDK uses a Firebase installation identifier and basic device/app information. |
 
@@ -49,11 +54,15 @@ The service providers listed in section 5 process data on our behalf, under thei
 
 Purchases are handled entirely by Google Play Billing. Google processes your payment details under its own privacy policy; we only receive the purchase information Google Play gives to the app (product, purchase token, purchase state and Google's signature), which the game checks on the device before crediting the items.
 
+**VIP subscription.** The optional weekly VIP subscription is sold, billed, renewed and cancelled **by Google Play**. It renews automatically every week until you cancel it in the Google Play app (Payments & subscriptions > Subscriptions); refunds follow Google Play's rules. The game receives only the subscription's purchase information described above and, each time it starts, asks Google Play whether the subscription is still active, so it can give or remove the VIP benefits. The game stores on your device (and in your cloud save) until when VIP is active and the day you last collected the VIP gems.
+
 ### 2.4 Permissions
 
 The App requests only:
 
-- **Internet access** (`INTERNET`): cloud save, leaderboard, analytics and remote settings.
+- **Internet access** (`INTERNET`): cloud save, leaderboard, analytics, crash reports and remote settings.
+- **Notifications** (`POST_NOTIFICATIONS`, Android 13 and later): asked **only if you agree** to the reminders in the game or turn them on in Settings. You can turn them off at any time in the game settings or in Android settings.
+- **Run at startup** (`RECEIVE_BOOT_COMPLETED`): only so that reminders you agreed to are not lost when the phone restarts.
 
 The App explicitly removes the **Advertising ID** (`AD_ID`) permission: the advertising ID is never read.
 
@@ -69,13 +78,15 @@ The App does **not** request access to your location, contacts, camera, micropho
 | **In-app purchases**: delivering and restoring what you bought | Purchase history and tokens, items credited | **Performance of a contract** (Art. 6(1)(b) GDPR). |
 | **Security and fraud prevention**: checking that purchases are genuine, crediting each purchase only once | Purchase tokens and signatures, device info, IP address | **Legitimate interest** (Art. 6(1)(f) GDPR) in protecting the game, our revenue and other players. |
 | **Remote game settings** (for example offer timing) | Firebase installation ID, device/app info | **Legitimate interest** (Art. 6(1)(f) GDPR) in configuring and operating the game. |
+| **Crash and performance reports**: finding and fixing crashes and freezes | Crash/freeze details, device and app information, Crashlytics installation ID | **Legitimate interest** (Art. 6(1)(f) GDPR) in keeping the game stable and working on your device. |
+| **Local reminders** | Reminder preference and schedule (on your device only) | **Your choice** in the game; nothing leaves your device. |
 | **Recording your privacy choices** | Consent record (on your device) | **Legal obligation** (Art. 6(1)(c) and 7(1) GDPR) to be able to demonstrate consent. |
 
 Where we rely on legitimate interest, you can object at any time (see section 8).
 
 ## 4. Your privacy choices in the App
 
-**First launch.** Before analytics is started, the game asks for your year of birth. Then:
+**After your first run.** You can play your first run straight away: no question is asked before it, and no game statistics are sent before your answer (the events of that run wait in the phone's memory, see section 2.1). After the first run, and before any analytics is started, the game asks for your year of birth. Then:
 
 - **Under 13 (everywhere):** analytics never collects data.
 - **EEA, UK and Switzerland, under 16:** analytics never collects data.
@@ -89,6 +100,8 @@ If the game cannot tell whether you are in the EEA, UK or Switzerland, it treats
 
 A new choice applies to analytics straight away.
 
+**Reminders.** After a couple of runs the game asks once whether you want reminders when your free gift and daily reward are ready. They are off unless you say yes, and you can switch them on or off at any time in **Settings** (or block notifications in Android settings).
+
 **Delete my data.** Settings > Privacy also has a **Delete my data** button, described in section 8.
 
 When we change the partners or purposes listed in the consent dialog, players in the EEA/UK/CH are asked again.
@@ -97,10 +110,10 @@ When we change the partners or purposes listed in the consent dialog, players in
 
 | Provider | What it does in the App | Privacy policy |
 |---|---|---|
-| **Google** (Firebase Authentication, Cloud Firestore, Firebase Analytics, Remote Config) | Anonymous player ID, cloud save, leaderboard, game statistics, remote settings | [Google Privacy Policy](https://policies.google.com/privacy) · [Privacy and security in Firebase](https://firebase.google.com/support/privacy) |
-| **Google** (Google Play, Google Play Billing) | App distribution and in-app purchases | [Google Privacy Policy](https://policies.google.com/privacy) |
+| **Google** (Firebase Authentication, Cloud Firestore, Firebase Analytics, Remote Config, Firebase Crashlytics) | Anonymous player ID, cloud save, leaderboard, game statistics, remote settings, crash and performance reports | [Google Privacy Policy](https://policies.google.com/privacy) · [Privacy and security in Firebase](https://firebase.google.com/support/privacy) |
+| **Google** (Google Play, Google Play Billing) | App distribution, in-app purchases and the VIP subscription (billing, renewal, cancellation) | [Google Privacy Policy](https://policies.google.com/privacy) |
 
-Firebase acts as our data processor for the cloud save, leaderboard, analytics and Remote Config. Google Play processes purchases under its own privacy policy.
+Firebase acts as our data processor for the cloud save, leaderboard, analytics, Remote Config and Crashlytics. Google Play processes purchases under its own privacy policy.
 
 ## 6. International data transfers
 
@@ -112,6 +125,8 @@ Our providers may process data outside the European Economic Area, the UK and Sw
 - **Cloud save and purchase records in your cloud save**: for as long as your anonymous account exists, or until you delete them with **Delete my data** or ask us to delete them.
 - **Leaderboard entry**: for as long as your anonymous account exists, or until you delete it with **Delete my data** or ask us to delete it.
 - **Firebase Analytics data**: event-level data is kept for the retention period set in our Firebase project, no longer than 14 months; aggregated reports that do not identify you may be kept longer. **Delete my data** resets the analytics identifier on your device, so events already sent can no longer be linked to it and are deleted at the end of the retention period.
+- **Crash and performance reports** (Crashlytics): kept for 90 days, then deleted automatically.
+- **First-run statistics waiting for your choice**: only in the phone's memory, until you answer the consent questions (then sent or deleted) or the game is closed.
 - **Data processed by Google Play**: according to Google's own retention policy.
 
 ## 8. Your rights (EEA, UK and Switzerland)
@@ -146,7 +161,7 @@ If you are a California resident (or a resident of another US state with a simil
 - **delete** it, and **correct** it if it is inaccurate;
 - **not be discriminated against** for exercising these rights.
 
-**Categories collected** (in the last 12 months): identifiers (anonymous Firebase user ID, Firebase installation IDs, IP address); commercial information (purchase history and tokens); internet or other electronic network activity (game events); approximate geolocation derived from the IP address. We do not collect sensitive personal information.
+**Categories collected** (in the last 12 months): identifiers (anonymous Firebase user ID, Firebase installation IDs, IP address); commercial information (purchase history and tokens); internet or other electronic network activity (game events, crash and performance reports); approximate geolocation derived from the IP address. We do not collect sensitive personal information.
 
 **"Sale" and "sharing".** We do not sell or share personal information, and the App has no advertising.
 
@@ -159,7 +174,7 @@ The game has no ads and asks for the player's year of birth before starting anal
 - **Players under 13** never get analytics, in any country.
 - **In the EEA, the UK and Switzerland, players under 16** (the highest age of digital consent in those countries) never get analytics either.
 
-For these players the game still uses the anonymous Firebase user ID, the cloud save, the leaderboard (with the automatically generated name) and Remote Config, as described in section 2.2, so that the game works. We do not knowingly collect any other personal information from children. If you are a parent or guardian and believe your child's data has been collected in a way that is not described here, use **Delete my data** in Settings > Privacy or contact us and we will delete it.
+For these players the game still uses the anonymous Firebase user ID, the cloud save, the leaderboard (with the automatically generated name), Remote Config and crash reports, as described in section 2.2, so that the game works. Game statistics of their first run, kept in memory before the age question (section 2.1), are deleted and never sent. We do not knowingly collect any other personal information from children. If you are a parent or guardian and believe your child's data has been collected in a way that is not described here, use **Delete my data** in Settings > Privacy or contact us and we will delete it.
 
 ## 11. Security
 
