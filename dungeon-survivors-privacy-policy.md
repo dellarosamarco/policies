@@ -1,8 +1,8 @@
-# Dungeon Survivors: Roguelite – Privacy Policy
+# Cursed Crypt: Horde Slayer – Privacy Policy
 
 **Last updated:** November 15, 2026
 
-This Privacy Policy explains how the mobile game **Dungeon Survivors: Roguelite** (the "Game") handles information. Contact: hoenngames@gmail.com
+This Privacy Policy explains how the mobile game **Cursed Crypt: Horde Slayer** (the "Game") handles information. Contact: hoenngames@gmail.com
 
 ## 1. Information we collect
 
