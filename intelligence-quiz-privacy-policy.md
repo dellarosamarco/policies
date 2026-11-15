@@ -2,7 +2,7 @@
 
 **Last updated:** November 15, 2026
 
-This Privacy Policy explains how the mobile app **Intelligence Quiz: Brain Games** (package `com.dellarosamarco.intelligence_quiz`, the "App") handles your information. The App is developed and published by Workout Master ("we", "us").
+This Privacy Policy explains how the mobile app **Intelligence Quiz: Brain Games** (package `com.MaarcoDev.IntelligenceQuiz`, the "App") handles your information. The App is developed and published by Workout Master ("we", "us").
 
 ## Summary
 
