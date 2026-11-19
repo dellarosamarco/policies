@@ -1,6 +1,6 @@
 # Privacy Policy for Ranked Workouts
 
-**Last updated: September 24, 2026**
+**Last updated: November 19, 2026**
 
 This Privacy Policy explains how **Ranked Workouts** ("Ranked Workouts", "we", "our") collects, uses, stores, and shares information when you use the app.
 
@@ -81,6 +81,18 @@ Service providers such as Firebase, Google, Apple, and the relevant app store ma
 
 Ranked Workouts currently does not include an advertising SDK and does not sell personal data.
 
+### 7. Usage analytics (PostHog and Firebase Analytics)
+
+Ranked Workouts uses **PostHog** (product analytics) to understand how the app is used. The same usage events are also sent to **Google Analytics for Firebase** when Firebase is available. When your device is online, the app sends:
+
+- a random identifier created on installation by the PostHog SDK (it is not your advertising ID and is not linked to your name, e-mail, or account);
+- usage events: app installed, updated, opened, and closed; screens viewed; onboarding steps; workouts and ranked tests saved (numbers of exercises, sets, records, rank-ups, XP, and level); ranked tests started, completed, or abandoned (test, duration, and rank points); rank-ups and level-ups; emblems unlocked; features used (such as programs, templates, rest timer, leaderboards, friends, cloud backup, and settings); premium screens viewed, purchases, and subscriptions (product, price, and currency); shares; rating prompts; notifications opened; and error events (where the error happened and the error type only);
+- a few stable properties: level, overall rank, Pro status and plan, number of workouts completed, training style, and weight unit;
+- device and app information (device manufacturer and model, operating system and version, app version, language, screen size, time zone, and network type);
+- your IP address, which PostHog uses to derive an approximate location (country, region, city).
+
+Events contain only ids, counts, and option names: never your athlete name, handle, e-mail, motto, or anything you type. There is **no session replay or screen recording**, and PostHog does not receive your advertising ID. Ranked Workouts does not link PostHog events to your account: they are tied only to the random identifier above, and no personal profile is created in PostHog.
+
 ## Why We Process Data
 
 We use information to:
@@ -93,7 +105,8 @@ We use information to:
 6. verify purchases and provide premium entitlements;
 7. provide password reset and authentication services;
 8. protect the service against abuse, invalid data, fraud, and security incidents;
-9. comply with legal obligations.
+9. understand how the app is used and improve it: measure retention, find where athletes get stuck or drop off, and fix problems (usage analytics, which is not used for advertising and is never sold);
+10. comply with legal obligations.
 
 ## Legal Bases Under the GDPR
 
@@ -101,7 +114,7 @@ Where the GDPR applies, processing may rely on:
 
 - **performance of a contract (Art. 6(1)(b))** to provide requested app, account, cloud, leaderboard, and purchase features;
 - **consent (Art. 6(1)(a))** where a feature requires your optional choice or device permission;
-- **legitimate interests (Art. 6(1)(f))** for security, fraud prevention, service integrity, and diagnostics;
+- **legitimate interests (Art. 6(1)(f))** for security, fraud prevention, service integrity, and diagnostics, and for usage analytics with PostHog and Firebase Analytics (understanding how the app is used and improving it). You have the right to object to this processing at any time (see "Your Rights");
 - **legal obligations (Art. 6(1)(c))** where processing is required by law.
 
 You may stop using optional cloud/social features or delete your cloud data as described below.
@@ -110,7 +123,8 @@ You may stop using optional cloud/social features or delete your cloud data as d
 
 Ranked Workouts may share information only as needed to operate the service with providers such as:
 
-- **Google Firebase** — Authentication, Firestore, and Cloud Functions;
+- **Google Firebase** — Authentication, Firestore, Cloud Functions, and Analytics;
+- **PostHog, Inc. (USA)** — product analytics — https://posthog.com/privacy;
 - **Google Sign-In** — optional Google account authentication;
 - **Google Play** — Android app distribution, billing, subscription/purchase processing, and purchase validation;
 - **Apple App Store / StoreKit** — iOS app distribution, billing, subscription/purchase processing, and receipt validation.
@@ -125,12 +139,15 @@ Information may also be disclosed if required by law or when reasonably necessar
 
 Some service providers may process data outside your country. Where required, transfers are handled using safeguards provided by applicable law and by the relevant service provider.
 
+PostHog, Inc. is based in the USA and analytics data is stored in PostHog's US cloud. These transfers are protected by the European Commission's Standard Contractual Clauses (included in PostHog's Data Processing Agreement) and, where applicable, the EU-U.S. Data Privacy Framework.
+
 ## Data Retention
 
 - **Local data** remains on your device until you reset it, clear app storage, or uninstall the app, subject to operating-system backup behavior.
 - **Cloud account and backup data** is retained while the cloud account is active or until deletion is requested.
 - **Public profile and leaderboard data** is retained while the related cloud data exists and may be removed when you unpublish records or delete cloud data.
 - **Purchase entitlement data** may be retained as needed to validate or restore purchases and comply with store, fraud-prevention, accounting, or legal requirements.
+- **PostHog analytics events** are kept for up to 12 months and are then deleted automatically or anonymised/aggregated.
 - Google and Apple may retain transaction information independently under their own policies.
 
 ## Account and Data Deletion
@@ -160,6 +177,10 @@ Depending on your jurisdiction, including under the GDPR, you may have the right
 
 To exercise these rights, contact **hoenngames@gmail.com**.
 
+### Usage analytics choices
+
+Ranked Workouts currently has no in-app setting to turn off usage analytics. Analytics stop when you uninstall the app, and clearing the app's storage or reinstalling it resets the random analytics identifier. To object to usage analytics or to request deletion of analytics data, contact **hoenngames@gmail.com**.
+
 ## Security
 
 We use reasonable technical measures such as HTTPS/TLS, Firebase Authentication, Firestore security rules, server-side validation, and access controls. However, no electronic system can be guaranteed to be completely secure.
@@ -169,6 +190,8 @@ We use reasonable technical measures such as HTTPS/TLS, Firebase Authentication,
 Ranked Workouts is not directed to children under 13. Users must also meet any higher minimum age required by applicable local law or by the platform/account provider they use.
 
 If we learn that personal data was collected from a child in violation of applicable law, we will take reasonable steps to delete it.
+
+Usage analytics data is pseudonymous and is not used for advertising or profiling.
 
 ## Fitness and Health Information
 
