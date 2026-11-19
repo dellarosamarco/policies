@@ -1,6 +1,6 @@
 # Privacy Policy — Hollowmere: Hidden Clues
 
-**Last updated:** October 17, 2026
+**Last updated:** November 19, 2026
 **App:** Hollowmere: Hidden Clues (Android package `com.MaarcoDev.hiddenobjects`)
 **Developer:** MaarcoDev
 **Contact:** hoenngames@gmail.com
@@ -21,8 +21,19 @@ The Game saves your progress on your device: stars, coins, boosters, collected e
 | **Firebase Crashlytics** (Google) | Detecting and fixing crashes | Crash reports: stack traces, device model, OS version, app version, a Crashlytics installation ID |
 | **Google Play Billing** (Google) | Processing in-app purchases | Payments are handled entirely by Google Play. We never receive your payment details; the Game only receives the purchased product ID and a purchase confirmation |
 | **Google Play In-App Review** (Google) | Letting you rate the Game without leaving it | Handled by Google Play |
+| **PostHog** (PostHog, Inc., USA), stored in PostHog's US cloud | Product analytics: understanding how the Game is used, how many players come back, where players get stuck or stop playing, and fixing problems | Random device identifier, usage events, device and app information, IP address (used for approximate location) — see below |
 
 Firebase Analytics is configured **without** advertising identifiers: the Game does not request the Android Advertising ID and ad personalization signals are disabled.
+
+**Usage analytics (PostHog).** PostHog processes:
+
+- a **random device identifier** created by the PostHog software when the Game is first started; it is not the advertising ID and is not linked to your name or email address;
+- **usage events**: the Game being installed, updated, opened and sent to the background; screens opened; cases started, solved, lost or abandoned (scene, mode, chapter, daily case or not, duration, score, stars, misclicks, best combo, objects found, reason for losing); first-run intro and tutorial steps; features used (for example boosters and chapters); achievements unlocked and claimed; daily rewards; rating prompts; whether notifications were allowed, and reminders opened; shop views and purchases (product ID, price and currency); errors (where they happened and a short technical message);
+- a few **game properties** used to group players: rank, chapter, cases solved, total stars and whether you own premium content;
+- **device and app information** added automatically: device manufacturer and model, operating system and version, app version and build, language, screen size, time zone and network type;
+- your **IP address**, which PostHog uses to derive an **approximate location** (country, region, city).
+
+PostHog does **not** record your screen (no session replay) and receives no names, email addresses or advertising ID. Events are linked only to the random device identifier; no PostHog user profile is created. Analytics data is not used for advertising and is never sold.
 
 Reminder notifications (daily case and daily reward) are scheduled **locally on your device**; no push-notification server is used. You can turn them off in **Settings → Reminders** or in your device settings.
 
@@ -35,7 +46,9 @@ Reminder notifications (daily case and daily reward) are scheduled **locally on 
 
 ## 4. Legal bases (EEA/UK users)
 
-Cloud backup and in-app purchases are processed to provide the service you requested (performance of a contract). Analytics and crash reporting are processed on the basis of our legitimate interest in keeping the Game stable and improving it.
+Cloud backup and in-app purchases are processed to provide the service you requested (performance of a contract). Analytics (Google Analytics for Firebase and PostHog) and crash reporting are processed on the basis of our legitimate interest in keeping the Game stable and improving it. You have the right to object at any time (see section 7).
+
+PostHog, Inc. is based in the United States, and PostHog analytics data is stored in PostHog's US cloud. These transfers are protected by the European Commission's Standard Contractual Clauses (included in PostHog's Data Processing Agreement) and, where applicable, the EU-U.S. Data Privacy Framework.
 
 ## 5. Data retention
 
@@ -43,17 +56,20 @@ Cloud backup and in-app purchases are processed to provide the service you reque
 - Cloud backup (Firestore) and anonymous user ID: until you delete them (see section 7).
 - Analytics: user-level data is retained for the period configured in Google Analytics (2 months) and then deleted or aggregated.
 - Crash reports: kept by Firebase Crashlytics for 90 days.
+- PostHog analytics events: kept for up to 12 months and then deleted automatically (or anonymised and aggregated).
 
 ## 6. Children
 
-The Game is not directed at children under 13 and we do not knowingly collect personal information from them. If you believe a child has provided us with personal data, contact us and we will delete it.
+The Game is not directed at children under 13 and we do not knowingly collect personal information from them. If you believe a child has provided us with personal data, contact us and we will delete it. Analytics data is pseudonymous and is not used for advertising or profiling.
 
 ## 7. Your rights and deleting your data
 
 You can delete all your data at any time:
 
 - **In the Game:** Settings → **Delete my data**. This deletes your cloud backup, your anonymous account and all data stored on the device.
-- **By email:** write to **hoenngames@gmail.com** (see the [account deletion page](account-deletion.md)).
+- **By email:** write to **hoenngames@gmail.com** (see the [account deletion page](hollowmere-account-deletion.md)).
+
+**Analytics:** the Game has **no in-app switch** to turn off analytics (Firebase and PostHog) or crash reporting. **Settings → Delete my data** also resets the analytics identifiers, so later events start under a new random identifier. Uninstalling the Game stops all collection, and clearing the Game's data or reinstalling it resets the random identifier. To object to analytics or request deletion of analytics data, write to **hoenngames@gmail.com**.
 
 Depending on where you live (for example under the GDPR), you also have the right to access, correct, export or restrict the processing of your data and to object to it. Contact us at hoenngames@gmail.com; you can also lodge a complaint with your local data protection authority.
 
@@ -70,3 +86,5 @@ We may update this policy when the Game changes. The "Last updated" date above s
 MaarcoDev — **hoenngames@gmail.com**
 
 Google's privacy policy: https://policies.google.com/privacy
+
+PostHog's privacy policy: https://posthog.com/privacy

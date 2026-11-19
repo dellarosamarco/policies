@@ -1,6 +1,6 @@
 # Privacy Policy – Police Escape: Car Chase Game
 
-**Last updated:** 10 November 2026
+**Last updated:** 19 November 2026
 **App:** Police Escape: Car Chase Game (Italian store listing: "Police Escape: Inseguimento"; Android package `com.MaarcoDev.PoliceEscape`)
 **Contact:** [hoenngames@gmail.com](mailto:hoenngames@gmail.com)
 
@@ -10,6 +10,7 @@ This Privacy Policy explains what information Hoenn Games ("we", "us") and our p
 
 - The game is free and **has no ads**. It does not include any advertising SDK and does not use the advertising ID.
 - We use **Google Firebase** for an anonymous player ID, cloud save, a global leaderboard, game statistics (Firebase Analytics), remote game settings (Remote Config) and crash and performance reports (Firebase Crashlytics).
+- We also use **PostHog** (PostHog, Inc., USA) for game statistics (product analytics). PostHog follows **exactly the same choice** as Firebase Analytics: it never runs before your answer, never for players under 13 (or under 16 in the EEA/UK/CH), and it stops when you switch game statistics off. It uses a random device identifier, records no screen and is never used for advertising.
 - In-app purchases and the optional weekly **VIP subscription** are processed and managed by **Google Play**. We never see your payment card details; you cancel the subscription in Google Play.
 - The game never asks for your name, e-mail, phone number, contacts, photos or precise location.
 - You can play your **first run** straight away. **After the first run** the game asks for your **year of birth** (and, in the EEA/UK/CH, for consent). The game statistics of that first run are kept **only on your phone, in memory**, and are sent **only if you then allow analytics**; otherwise they are deleted. Players **under 13** never get analytics; in the **EEA, the UK and Switzerland** players under 16 never get analytics either, and adults there are asked for consent before analytics are used.
@@ -34,7 +35,7 @@ The service providers listed in section 5 process data on our behalf, under thei
 - **Age band**: the year of birth you enter is used only to work out an age band ("under 13", "13–15 in the EEA/UK/CH", or "adult"). **Only the band is stored, never the year of birth.**
 - **Consent record**: the date and time of each privacy choice, the version of the consent text you saw, your choice about game statistics (analytics), where you made the choice, your age band and whether you were treated as being in the EEA/UK/CH. This record stays on your device so the game can apply your choice and show you when you last made it.
 - **Region check**: to decide whether to show the consent dialog, the game looks at your device's language/region settings and time zone. This check happens on the device; nothing is sent over the network for it.
-- **Game statistics of the first run (before your choice)**: the events of the run you play before answering the age/consent questions are kept **only in the phone's memory**. They are sent to Firebase Analytics only if your answer allows analytics; if it does not, they are deleted. They are also lost if the game is closed before you answer.
+- **Game statistics of the first run (before your choice)**: the events of the run you play before answering the age/consent questions are kept **only in the phone's memory**. They are sent to Firebase Analytics and PostHog only if your answer allows analytics; if it does not, they are deleted. They are also lost if the game is closed before you answer.
 - **Device capabilities**: the amount of memory, the Android version, the number of processor cores and the graphics chip (GPU) model are read once and stored on the device, to choose suitable graphics settings for your phone.
 - **Reminder preference and schedule**: whether you agreed to reminders and the reminders scheduled on your phone (for example "your free gift is ready"). These are **local notifications**, created and shown by your phone; there is no push notification server and nothing is sent over the network for them.
 ### 2.2 Data processed by us through Google Firebase
@@ -50,17 +51,30 @@ The service providers listed in section 5 process data on our behalf, under thei
 | **Device and app information** | Collected automatically by the Firebase SDKs: for example device model, operating system version, app version, language, country/region derived from the IP address, Firebase installation identifiers. |
 | **Remote Config** | The game downloads remote settings (for example when special offers are shown). To do this the Firebase SDK uses a Firebase installation identifier and basic device/app information. |
 
-### 2.3 Data processed by Google Play
+### 2.3 Data processed through PostHog (game statistics)
+
+Only when game statistics are allowed (the same choice as Firebase Analytics, see section 4), the game also sends game statistics to **PostHog**, a product analytics service of PostHog, Inc. (USA). We use one PostHog project for all our apps; each event is tagged with the app it comes from.
+
+| Data | Details |
+|---|---|
+| **Random device identifier** | A random (anonymous) identifier created by the PostHog SDK for this installation. It is not the advertising ID and is not linked to your name, e-mail, Google account or Firebase user ID. |
+| **Game events** | App installed, opened, updated and sent to the background; the screens of the game you view (menu, run, pause, results and panels such as the shop or garage); tutorial steps and tutorial completed; run started and ended (game mode, car, level, duration, score, stars, coins, new best, revive, how the run ended); daily reward claimed (streak); achievements unlocked; free gift, streak save, VIP gems, revive, double coins, car bought or upgraded and reminders accepted (features used); rating prompt shown; shop and special offers viewed; purchase started and completed and VIP subscription started (product, price, currency); and a few player properties (player level, VIP status, total runs). |
+| **Device and app information** | Added automatically by the PostHog SDK: device manufacturer and model, operating system and version, app version and build, language/locale, screen size, time zone and network type. |
+| **IP address and approximate location** | PostHog receives your IP address when events are sent and uses it to derive an approximate location (country, region, city). |
+
+PostHog is used **without session replay or any recording of the screen**, and **no person profile** is created: events are linked only to the random device identifier. The events contain no name, e-mail, advertising ID or anything you typed.
+
+### 2.4 Data processed by Google Play
 
 Purchases are handled entirely by Google Play Billing. Google processes your payment details under its own privacy policy; we only receive the purchase information Google Play gives to the app (product, purchase token, purchase state and Google's signature), which the game checks on the device before crediting the items.
 
 **VIP subscription.** The optional weekly VIP subscription is sold, billed, renewed and cancelled **by Google Play**. It renews automatically every week until you cancel it in the Google Play app (Payments & subscriptions > Subscriptions); refunds follow Google Play's rules. The game receives only the subscription's purchase information described above and, each time it starts, asks Google Play whether the subscription is still active, so it can give or remove the VIP benefits. The game stores on your device (and in your cloud save) until when VIP is active and the day you last collected the VIP gems.
 
-### 2.4 Permissions
+### 2.5 Permissions
 
 The App requests only:
 
-- **Internet access** (`INTERNET`): cloud save, leaderboard, analytics, crash reports and remote settings.
+- **Internet access** (`INTERNET`): cloud save, leaderboard, analytics (Firebase Analytics and PostHog), crash reports and remote settings.
 - **Notifications** (`POST_NOTIFICATIONS`, Android 13 and later): asked **only if you agree** to the reminders in the game or turn them on in Settings. You can turn them off at any time in the game settings or in Android settings.
 - **Run at startup** (`RECEIVE_BOOT_COMPLETED`): only so that reminders you agreed to are not lost when the phone restarts.
 
@@ -72,7 +86,7 @@ The App does **not** request access to your location, contacts, camera, micropho
 
 | Purpose | Data | Legal basis (EEA/UK GDPR) |
 |---|---|---|
-| **Game statistics** to understand how the game is played and improve it | Usage data/events, device info, Firebase identifiers | **Your consent** (Art. 6(1)(a) GDPR). Same rules as above. |
+| **Game statistics** (Firebase Analytics and PostHog) to understand how the game is played and improve it, measure how many players come back, find where players get stuck or stop playing, and fix problems | Usage data/events, device info, Firebase identifiers, PostHog random device identifier, IP address (approximate location) | **Your consent** (Art. 6(1)(a) GDPR), which you can withdraw at any time. Same rules as above. Game statistics are never used for advertising and never sold. |
 | **Cloud save and restoring your progress** | Anonymous user ID, game progress, purchase records | **Performance of a contract** (Art. 6(1)(b) GDPR): providing the game you chose to play. |
 | **Leaderboard** | Anonymous user ID, generated display name, best score | **Performance of a contract** (Art. 6(1)(b) GDPR): providing a game feature. |
 | **In-app purchases**: delivering and restoring what you bought | Purchase history and tokens, items credited | **Performance of a contract** (Art. 6(1)(b) GDPR). |
@@ -96,9 +110,11 @@ Where we rely on legitimate interest, you can object at any time (see section 8)
 
 If the game cannot tell whether you are in the EEA, UK or Switzerland, it treats you as if you were and shows the consent dialog.
 
-**Changing or withdrawing your choice.** Open **Settings > Privacy** in the game and switch **Game statistics** on or off, then save. The page also shows the date and version of your last choice and a link to this policy. Withdrawing consent does not affect processing that took place before.
+**Changing or withdrawing your choice.** Open **Settings > Privacy** in the game and switch **Game statistics** on or off, then save. The same switch controls both Firebase Analytics and PostHog. The page also shows the date and version of your last choice and a link to this policy. Withdrawing consent does not affect processing that took place before.
 
 A new choice applies to analytics straight away.
+
+**Other ways to stop game statistics.** Uninstalling the App stops all collection. Clearing the App's data or reinstalling it creates a new random PostHog identifier, and **Delete my data** (section 8) also resets it. You can also write to [hoenngames@gmail.com](mailto:hoenngames@gmail.com) to object or to ask us to delete your analytics data.
 
 **Reminders.** After a couple of runs the game asks once whether you want reminders when your free gift and daily reward are ready. They are off unless you say yes, and you can switch them on or off at any time in **Settings** (or block notifications in Android settings).
 
@@ -112,12 +128,13 @@ When we change the partners or purposes listed in the consent dialog, players in
 |---|---|---|
 | **Google** (Firebase Authentication, Cloud Firestore, Firebase Analytics, Remote Config, Firebase Crashlytics) | Anonymous player ID, cloud save, leaderboard, game statistics, remote settings, crash and performance reports | [Google Privacy Policy](https://policies.google.com/privacy) · [Privacy and security in Firebase](https://firebase.google.com/support/privacy) |
 | **Google** (Google Play, Google Play Billing) | App distribution, in-app purchases and the VIP subscription (billing, renewal, cancellation) | [Google Privacy Policy](https://policies.google.com/privacy) |
+| **PostHog, Inc.** (USA) | Product analytics (game statistics), only with the same choice as Firebase Analytics | [PostHog Privacy Policy](https://posthog.com/privacy) |
 
-Firebase acts as our data processor for the cloud save, leaderboard, analytics, Remote Config and Crashlytics. Google Play processes purchases under its own privacy policy.
+Firebase acts as our data processor for the cloud save, leaderboard, analytics, Remote Config and Crashlytics, and PostHog acts as our data processor for game statistics. Google Play processes purchases under its own privacy policy.
 
 ## 6. International data transfers
 
-Our providers may process data outside the European Economic Area, the UK and Switzerland, for example in the **United States** and in other countries where they or their sub-processors operate. When personal data is transferred to a country that does not have an adequacy decision, the transfer relies on the **Standard Contractual Clauses** approved by the European Commission (and the UK Addendum/IDTA for UK data), or on another valid safeguard such as the EU-U.S. Data Privacy Framework where the provider is certified. You can ask us for more information about these safeguards at the contact address above.
+Our providers may process data outside the European Economic Area, the UK and Switzerland, for example in the **United States** and in other countries where they or their sub-processors operate. When personal data is transferred to a country that does not have an adequacy decision, the transfer relies on the **Standard Contractual Clauses** approved by the European Commission (and the UK Addendum/IDTA for UK data), or on another valid safeguard such as the EU-U.S. Data Privacy Framework where the provider is certified. **PostHog, Inc.** is based in the USA and game statistics sent to PostHog are stored in PostHog's US cloud; these transfers are protected by the European Commission's Standard Contractual Clauses included in PostHog's Data Processing Agreement and, where applicable, the EU-U.S. Data Privacy Framework. You can ask us for more information about these safeguards at the contact address above.
 
 ## 7. How long we keep data
 
@@ -125,6 +142,7 @@ Our providers may process data outside the European Economic Area, the UK and Sw
 - **Cloud save and purchase records in your cloud save**: for as long as your anonymous account exists, or until you delete them with **Delete my data** or ask us to delete them.
 - **Leaderboard entry**: for as long as your anonymous account exists, or until you delete it with **Delete my data** or ask us to delete it.
 - **Firebase Analytics data**: event-level data is kept for the retention period set in our Firebase project, no longer than 14 months; aggregated reports that do not identify you may be kept longer. **Delete my data** resets the analytics identifier on your device, so events already sent can no longer be linked to it and are deleted at the end of the retention period.
+- **PostHog analytics data**: events are kept for up to 12 months and then deleted automatically (or anonymised/aggregated so they no longer relate to a device). **Delete my data** resets the PostHog identifier on your device.
 - **Crash and performance reports** (Crashlytics): kept for 90 days, then deleted automatically.
 - **First-run statistics waiting for your choice**: only in the phone's memory, until you answer the consent questions (then sent or deleted) or the game is closed.
 - **Data processed by Google Play**: according to Google's own retention policy.
@@ -146,7 +164,7 @@ Under the GDPR, the UK GDPR and the Swiss data protection law you have the right
 
 - deletes your **cloud save** and your **leaderboard entry** from our servers (if the server cannot be reached, nothing is changed and you can try again);
 - turns the cloud save and leaderboard **off on this device**, so nothing is uploaded again;
-- **resets the Firebase Analytics data** and identifier on your device and stops analytics;
+- **resets the Firebase Analytics data** and identifier and the **PostHog identifier** on your device and stops analytics;
 - deletes your **privacy choices** and their log on your device; the age question (and, in the EEA/UK/CH, the consent dialog) is shown again.
 
 Your game progress stays on your device; uninstalling the App or clearing its data deletes it.
@@ -161,7 +179,7 @@ If you are a California resident (or a resident of another US state with a simil
 - **delete** it, and **correct** it if it is inaccurate;
 - **not be discriminated against** for exercising these rights.
 
-**Categories collected** (in the last 12 months): identifiers (anonymous Firebase user ID, Firebase installation IDs, IP address); commercial information (purchase history and tokens); internet or other electronic network activity (game events, crash and performance reports); approximate geolocation derived from the IP address. We do not collect sensitive personal information.
+**Categories collected** (in the last 12 months): identifiers (anonymous Firebase user ID, Firebase installation IDs, PostHog random device identifier, IP address); commercial information (purchase history and tokens); internet or other electronic network activity (game events, crash and performance reports); approximate geolocation derived from the IP address. We do not collect sensitive personal information.
 
 **"Sale" and "sharing".** We do not sell or share personal information, and the App has no advertising.
 
@@ -171,14 +189,14 @@ If you are a California resident (or a resident of another US state with a simil
 
 The game has no ads and asks for the player's year of birth before starting analytics:
 
-- **Players under 13** never get analytics, in any country.
+- **Players under 13** never get analytics (neither Firebase Analytics nor PostHog), in any country.
 - **In the EEA, the UK and Switzerland, players under 16** (the highest age of digital consent in those countries) never get analytics either.
 
 For these players the game still uses the anonymous Firebase user ID, the cloud save, the leaderboard (with the automatically generated name), Remote Config and crash reports, as described in section 2.2, so that the game works. Game statistics of their first run, kept in memory before the age question (section 2.1), are deleted and never sent. We do not knowingly collect any other personal information from children. If you are a parent or guardian and believe your child's data has been collected in a way that is not described here, use **Delete my data** in Settings > Privacy or contact us and we will delete it.
 
 ## 11. Security
 
-Data is sent to Firebase over encrypted connections (HTTPS/TLS). Each cloud save is linked to its anonymous user ID and is meant to be readable and writable only by that user. Purchases are verified with Google Play's signature before items are credited. No method of transmission or storage is completely secure, but we take reasonable measures to protect your data.
+Data is sent to Firebase and PostHog over encrypted connections (HTTPS/TLS). Each cloud save is linked to its anonymous user ID and is meant to be readable and writable only by that user. Purchases are verified with Google Play's signature before items are credited. No method of transmission or storage is completely secure, but we take reasonable measures to protect your data.
 
 ## 12. Changes to this policy
 

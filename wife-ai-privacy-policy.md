@@ -1,6 +1,6 @@
 # Wife AI — Privacy Policy
 
-Last updated: October 9, 2026
+Last updated: November 19, 2026
 
 This Privacy Policy explains how **Wife AI** (the "App") collects, uses and protects your information. The App is developed and operated by Marco Della Rosa, Italy ("we", "us"), who is the data controller for the personal data described below.
 
@@ -18,8 +18,10 @@ Wife AI is intended **only for adults (18+)**. It is an entertainment app that l
 - **Purchase and entitlement data** — whether you have an active subscription, which virtual gifts you bought and related order/transaction identifiers returned by Google Play. **We never receive your payment card details**; payments are processed by Google Play.
 - **Usage counters** — daily counts of messages, images and characters created, used to apply fair-use limits and prevent abuse.
 - **Technical data** — limited device and app information processed by Firebase to operate and secure the service (for example Firebase App Check tokens and server logs).
+- **Usage analytics (PostHog)** — we use PostHog, a product analytics service, to understand how the App is used. The App sends PostHog: a random identifier created on installation (not your advertising ID, and not linked to your name, e-mail or account); usage events such as app installed, opened and closed, screens viewed, onboarding steps, sign-in and sign-up (only the method, e.g. Google or e-mail), a chat message sent (only whether it was a text or a sticker and whether it used a free trial message), photo requests and their outcome, photos saved, characters created, favourites saved, conversations deleted, features used, rating prompts, subscription and coin store screens viewed, plans selected, purchases started, completed or cancelled (product, price and currency), daily rewards, running out of coins, and error events (where the error happened and the error type only); whether you have Premium; device and app information (device manufacturer and model, operating system and version, app version, language, screen size, time zone and network type); and your IP address, which PostHog uses to derive an approximate location (country, region, city). **Your chat messages, the AI replies, photo prompts, generated images, character details, your name and your e-mail are never sent to PostHog.** There is no session replay or screen recording, and the App does not link PostHog events to your account: they are tied only to the random identifier above, and no personal profile is created in PostHog.
+- **Usage analytics (Google Analytics for Firebase)** — similar app interaction events (for example screens viewed, messages sent, photos requested, purchases), together with an app-instance identifier and device information, are also logged with Google Analytics for Firebase. Chat content is not included.
 
-We do **not** collect your precise location, contacts, photos from your gallery, microphone or camera data. The App does **not** contain advertising and does **not** use third-party analytics or advertising SDKs.
+We do **not** collect your precise location, contacts, photos from your gallery, microphone or camera data. The App does **not** contain advertising and does **not** use advertising SDKs; the analytics tools described above are used only to understand and improve the App.
 
 ## 2. How we use your information
 - to create and maintain your account and sync your conversations across devices;
@@ -27,17 +29,21 @@ We do **not** collect your precise location, contacts, photos from your gallery,
 - to provide subscriptions and in-app purchases and restore them;
 - to apply fair-use limits, prevent fraud, abuse and violations of our Terms;
 - to keep the App secure and fix problems;
+- to understand how the App is used and improve it: measuring retention, finding where users get stuck or drop off, and fixing problems (usage analytics, which is not used for advertising and is never sold);
 - to comply with legal obligations.
 
-**Legal bases (GDPR):** performance of a contract (providing the App you requested), our legitimate interests (security, abuse prevention, improving reliability), and compliance with legal obligations.
+**Legal bases (GDPR):** performance of a contract (providing the App you requested), our legitimate interests (security, abuse prevention, improving reliability, and usage analytics with PostHog and Google Analytics for Firebase to understand how the App is used and improve it — Art. 6(1)(f) GDPR; you can object to this at any time, see section 6), and compliance with legal obligations.
 
 ## 3. Service providers
 We share data only with the providers needed to run the App, who process it on our behalf:
-- **Google Firebase** (Authentication, Cloud Firestore, Cloud Storage, App Check) — account, profile, chat and image storage.
+- **Google Firebase** (Authentication, Cloud Firestore, Cloud Storage, App Check, Analytics) — account, profile, chat and image storage, and usage analytics.
 - **Google Gemini API via Firebase AI Logic** — processing of chat messages and image prompts to generate replies and images.
 - **Google Play** — payments, subscriptions and in-app purchases.
+- **PostHog, Inc.** (USA) — product analytics — https://posthog.com/privacy
 
 These providers are operated by Google LLC / Google Ireland Ltd. and may process data outside the European Economic Area, under appropriate safeguards such as the EU Standard Contractual Clauses. Their processing is also governed by Google's own terms and privacy policy: https://policies.google.com/privacy
+
+PostHog, Inc. is based in the USA and analytics data is stored in PostHog's US cloud. These transfers are protected by the European Commission's Standard Contractual Clauses (included in PostHog's Data Processing Agreement) and, where applicable, the EU-U.S. Data Privacy Framework.
 
 We **do not sell** your personal data and do not share it for advertising. We may disclose information if required by law or to protect rights, safety and the integrity of the service.
 
@@ -47,15 +53,19 @@ Data is transmitted over encrypted connections (HTTPS/TLS) and stored on Google 
 ## 5. Data retention
 We keep your account, profile, conversations and generated images for as long as your account exists. When you delete your account, the associated data is deleted from our systems, normally within 30 days, except where we must keep limited information to comply with law, resolve disputes or prevent fraud. Purchase records held by Google Play are subject to Google's retention policies.
 
+PostHog analytics events are kept for up to 12 months and are then deleted automatically or anonymised/aggregated.
+
 Some preferences are also stored locally on your device; they are removed when you clear the App's data or uninstall it.
 
 ## 6. Your rights
 Depending on where you live (including under the EU/UK GDPR), you have the right to access, correct, delete or export your personal data, to restrict or object to processing, and to withdraw consent where processing is based on consent. To exercise these rights, contact us at **hoenngames@gmail.com**. You also have the right to lodge a complaint with a supervisory authority — in Italy, the Garante per la protezione dei dati personali (www.garanteprivacy.it).
 
+**Usage analytics.** The App currently has no in-app setting to turn off usage analytics. Analytics stop when you uninstall the App, and clearing the App's data or reinstalling it resets the random analytics identifier. To object to usage analytics or to request deletion of analytics data, write to **hoenngames@gmail.com**.
+
 How to delete your account and data: https://github.com/dellarosamarco/policies/blob/main/wife-ai-account-deletion.md
 
 ## 7. Age restriction
-The App is not intended for anyone under 18. We do not knowingly collect data from minors. If you believe a minor has used the App, contact us and we will delete the account.
+The App is not intended for anyone under 18. We do not knowingly collect data from minors. If you believe a minor has used the App, contact us and we will delete the account. Usage analytics data is pseudonymous and is not used for advertising or profiling.
 
 ## 8. AI-generated content
 Replies and images are generated automatically by AI and may be inaccurate, unexpected or inappropriate. Do not share sensitive personal information (such as health data, passwords or financial information) in chats.
