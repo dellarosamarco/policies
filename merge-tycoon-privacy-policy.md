@@ -1,6 +1,6 @@
 # Merge Tycoon – Privacy Policy
 
-**Effective date:** October 16, 2026
+**Effective date:** November 19, 2026
 **App:** Merge Tycoon (Android package `com.MaarcoDev.mergetycoon`)
 **Contact:** [hoenngames@gmail.com](mailto:hoenngames@gmail.com)
 
@@ -30,8 +30,18 @@ Automatic cloud backup can be turned off in **Settings → Cloud save**. Each pl
 |---|---|---|
 | **Firebase Analytics** | App‑instance identifier, in‑game events (e.g. tutorial completed, new era reached, ascension, daily reward claimed, purchase completed), device model, OS version, language, app version, approximate location (country/region derived from the IP address). **The advertising ID is not collected.** | Understand how the game is played and improve it. |
 | **Firebase Crashlytics** | Crash and error reports (stack traces), device model, OS version, app version, a Crashlytics installation identifier. | Find and fix bugs and crashes. |
+| **PostHog** (usage analytics) | A random device identifier, game events, device and app information, IP address (see below). **No location is derived from the IP address.** | Understand how the game is played, measure retention, find where players get stuck or stop playing, and fix problems. |
 
-This data is not used for advertising and is not linked to your real identity. See [Firebase privacy and security](https://firebase.google.com/support/privacy).
+**Usage analytics (PostHog).** The app sends pseudonymous usage events to PostHog (PostHog, Inc., USA):
+
+- **Random device identifier** created by the PostHog SDK. It is not the advertising ID and is not linked to your name, e‑mail or Player ID.
+- **Game events:** app installed, updated, opened and sent to the background; screens and sheets opened (shop, upgrades, missions, collection, ascension, settings); merges (counted in batches); tutorial steps; new eras reached and new items discovered; ascensions (stars earned, number of ascensions, highest item tier); features used; achievements; daily rewards; shop and offer views; completed purchases and subscriptions (product ID, price, currency); rating prompts shown; notifications opened; and a few game statistics (best era, number of ascensions, whether you are a premium/VIP player).
+- **Device and app information:** device manufacturer and model, OS and version, app version and build, language/locale, screen size, time zone and network type.
+- **IP address:** PostHog receives it as part of the connection, but the app asks PostHog **not to derive any location** from it.
+
+PostHog is configured with **no session replay** and no recording of the screen. No name, e‑mail, advertising ID or free text is sent. Events are linked only to the random device identifier: **no user profile** is created and the Player ID is not sent to PostHog.
+
+This data is not used for advertising, is not sold and is not linked to your real identity. See [Firebase privacy and security](https://firebase.google.com/support/privacy) and the [PostHog privacy policy](https://posthog.com/privacy).
 
 ## 4. In‑app purchases
 
@@ -43,15 +53,20 @@ If you allow notifications, the app schedules **local reminders** on your device
 
 ## 6. Legal bases (EEA/UK users)
 
-We process data to provide the service you request (game progress, cloud save, purchases – *performance of a contract*), and for analytics and crash reporting to keep the game working and improve it (*legitimate interests*). You can object at any time by contacting us.
+We process data to provide the service you request (game progress, cloud save, purchases – *performance of a contract*), and for analytics (Firebase and PostHog) and crash reporting to keep the game working and improve it (*legitimate interests*, Art. 6(1)(f) GDPR). You have the right to object to this processing at any time by contacting us.
 
 ## 7. Sharing
 
-We do not sell or rent your data. Data is processed on our behalf only by **Google LLC** (Firebase and Google Play) as service providers, under their terms. Data may be processed on servers outside your country, including in the United States, with appropriate safeguards (e.g. Standard Contractual Clauses).
+We do not sell or rent your data. Data is processed on our behalf only by the following service providers, under their terms:
+
+- **Google LLC** (USA) — Firebase and Google Play — [policies.google.com/privacy](https://policies.google.com/privacy)
+- **PostHog, Inc.** (USA) — product analytics — [posthog.com/privacy](https://posthog.com/privacy)
+
+Data may be processed on servers outside your country, including in the United States, with appropriate safeguards (e.g. Standard Contractual Clauses). In particular, PostHog stores analytics data in its US cloud; these transfers are protected by the European Commission's Standard Contractual Clauses (included in PostHog's Data Processing Agreement) and, where applicable, the EU‑U.S. Data Privacy Framework.
 
 ## 8. Security
 
-All data sent between the app and Firebase is **encrypted in transit (HTTPS/TLS)**. Data stored by Firebase is encrypted at rest by Google. Access to cloud saves is restricted to the owner of the anonymous account.
+All data sent between the app and Firebase or PostHog is **encrypted in transit (HTTPS/TLS)**. Data stored by Firebase is encrypted at rest by Google. Access to cloud saves is restricted to the owner of the anonymous account.
 
 ## 9. Retention
 
@@ -59,10 +74,12 @@ All data sent between the app and Firebase is **encrypted in transit (HTTPS/TLS)
 - **Cloud save and anonymous account:** until you delete them (see section 10).
 - **Transfer codes:** automatically deleted after 24 hours.
 - **Analytics:** user‑level data is kept for up to 14 months; **Crashlytics** reports for up to 90 days.
+- **PostHog usage analytics:** events are kept for up to 12 months and then deleted automatically (or kept only in anonymised, aggregated form).
 
 ## 10. Your choices and data deletion
 
 - **In the app:** *Settings → Delete all my data* immediately deletes your local progress, your cloud save, your anonymous account and resets the analytics identifier.
+- **Usage analytics (PostHog):** the app currently has **no in‑app switch** to turn usage analytics off. *Settings → Delete all my data*, clearing the app data or reinstalling the app resets the random PostHog identifier, so new events are no longer linked to earlier ones; uninstalling the app stops all collection. To object to analytics or ask for deletion of your analytics data, write to [hoenngames@gmail.com](mailto:hoenngames@gmail.com).
 - **By e‑mail:** write to [hoenngames@gmail.com](mailto:hoenngames@gmail.com) with the subject "Delete my data – Merge Tycoon", including the **Player ID** shown in *Settings → Cloud save*. We delete the data within 30 days.
 
 Full instructions: [Merge Tycoon – Account and data deletion](https://github.com/dellarosamarco/policies/blob/main/merge-tycoon-account-deletion.md).
@@ -71,7 +88,7 @@ Depending on where you live (e.g. GDPR in the EU/UK, CCPA/CPRA in California), y
 
 ## 11. Children
 
-Merge Tycoon is a general‑audience game and is **not directed to children under 13**. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, contact us and we will delete it.
+Merge Tycoon is a general‑audience game and is **not directed to children under 13**. We do not knowingly collect personal information from children under 13. Analytics data is pseudonymous and is never used for advertising or profiling. If you believe a child has provided us with personal information, contact us and we will delete it.
 
 ## 12. Changes to this policy
 
