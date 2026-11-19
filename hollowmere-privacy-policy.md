@@ -67,7 +67,7 @@ The Game is not directed at children under 13 and we do not knowingly collect pe
 You can delete all your data at any time:
 
 - **In the Game:** Settings → **Delete my data**. This deletes your cloud backup, your anonymous account and all data stored on the device.
-- **By email:** write to **hoenngames@gmail.com** (see the [account deletion page](account-deletion.md)).
+- **By email:** write to **hoenngames@gmail.com** (see the [account deletion page](hollowmere-account-deletion.md)).
 
 **Analytics:** the Game has **no in-app switch** to turn off analytics (Firebase and PostHog) or crash reporting. **Settings → Delete my data** also resets the analytics identifiers, so later events start under a new random identifier. Uninstalling the Game stops all collection, and clearing the Game's data or reinstalling it resets the random identifier. To object to analytics or request deletion of analytics data, write to **hoenngames@gmail.com**.
 
