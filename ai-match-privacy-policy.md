@@ -35,7 +35,7 @@ Some providers may process data outside the EU/EEA (e.g. in the United States) u
 
 ## 4. Retention and deletion
 
-Server data (chats, photos, birth year, coins and counters) is kept while you use the app. You can delete it at any time in the app (*Profile → Delete my data*): this erases the data on your device and permanently deletes your server data linked to your anonymous ID, including chats and photos. Purchase records may be kept as long as required by tax law. If you uninstall the app without using *Delete my data*, your server data is deleted automatically after 12 months of inactivity.
+Server data (chats, photos, birth year, coins and counters) is kept while you use the app. You can delete it at any time in the app (*Profile → Delete my data*): this erases the data on your device and permanently deletes your chats, photos and birth year from our server. Your coin balance and purchase records are kept with your anonymous ID so that coins you bought are not lost, and purchase records may be kept as long as required by tax law. If you uninstall the app without using *Delete my data*, your server data is deleted automatically after 12 months of inactivity.
 
 ## 5. Your rights
 
