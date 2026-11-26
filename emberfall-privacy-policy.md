@@ -1,6 +1,6 @@
 # Privacy Policy – Emberfall Online
 
-**Last updated:** November 25, 2026
+**Last updated:** November 26, 2026
 
 This Privacy Policy explains how **Emberfall Online** ("the Game", "we", "us"), developed by MaarcoDev, collects, uses and protects information when you play the Game on Android.
 
@@ -23,7 +23,6 @@ We do **not** ask for your real name, phone number, location, contacts or photos
 | IP address, connection times, gameplay events (position, combat, trades) | Running the real-time multiplayer game, preventing cheating, fraud and abuse | Our game server |
 | App interactions (screens visited, features used) | Improving balance, content and performance | Google Analytics for Firebase |
 | Crash logs and diagnostics (device model, OS version, stack traces) | Fixing bugs and improving stability | Firebase Crashlytics |
-| Advertising ID and ad interaction data (only if you choose to watch optional rewarded ads) | Showing rewarded ads, measuring ad performance | Google AdMob |
 | Purchase confirmations (product ID, purchase token) | Delivering in-app purchases | Google Play Billing |
 
 Payments are processed entirely by Google Play. We never receive or store your payment card details.
@@ -46,13 +45,13 @@ Your **character name**, appearance, level, guild, online status and the message
 
 ## 5. Advertising
 
-The Game may offer **optional rewarded ads** (for example, to receive a bonus after watching an ad). Ads are served by Google AdMob, which may use your device's advertising ID. You can reset or delete your advertising ID, or opt out of personalized ads, in your device settings. Where required (for example in the EU/EEA and UK), we ask for your consent before showing personalized ads.
+Emberfall Online does **not** show any advertising and does not use advertising SDKs. We do not collect your device's advertising ID.
 
 ## 6. Data sharing
 
 Data is processed only by us and by the service providers listed above, which act on our behalf under their own privacy policies:
 
-- Google (Firebase, AdMob, Google Play): https://policies.google.com/privacy
+- Google (Firebase, Google Play): https://policies.google.com/privacy
 - Firebase: https://firebase.google.com/support/privacy
 
 Our game server is hosted by a cloud hosting provider located in the European Union, which stores data on our behalf. We do not share your data with any other third party, except where required by law or to protect the safety of players.
