@@ -1,0 +1,358 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-17T04:24:16.062110Z",
+  "apps": [
+    {
+      "id": "com.MaarcoDev.Artika",
+      "title": "Artika: Pixel Survival RPG",
+      "short": {
+        "en": "Offline open-world pixel survival RPG: 16 biomes, 108 weapons and epic bosses",
+        "it": "RPG survival offline open world in pixel art: 16 biomi, 108 armi e boss epici",
+        "es": "RPG de supervivencia pixelado de mundo abierto sin conexión: 16 biomas, 108 armas y jefes épicos.",
+        "fr": "RPG de survie en pixel art hors ligne en monde ouvert : 16 biomes, 108 armes et des boss épiques",
+        "de": "Offline-Open-World-Pixel-Survival-RPG: 16 Biome, 108 Waffen und epische Bosse",
+        "pt": "RPG de sobrevivência offline em mundo aberto com gráficos pixelados: 16 biomas, 108 armas e chefes épicos."
+      },
+      "icon": "https://play-lh.googleusercontent.com/n2duzPLoScXiSyu732b4EyWfF9DoEinNwWaokF0L_MS2AGFhCoCWwho4NM9t2vWycIuIZiAbOD9qKnIQ0mNtNvg",
+      "genre": "GAME_ROLE_PLAYING",
+      "rating": null,
+      "ratingCount": 0,
+      "price": 1.09,
+      "currency": "USD",
+      "contentRating": "Everyone 10+",
+      "developer": "Workout Master"
+    },
+    {
+      "id": "com.MaarcoDev.calisthenicsranking",
+      "title": "Calisthenics Ranking & Skills",
+      "short": {
+        "en": "Push-up & pull-up strength test: get your rank, unlock muscle-up and planche",
+        "it": "Test di forza a corpo libero: trazioni, piegamenti, rango e allenamento a casa",
+        "es": "Sube de rango de E a SSS con peso corporal, misiones, XP y rutinas guiadas.",
+        "fr": "Passe du rang E à SSS au poids du corps avec quêtes, XP et séances guidées.",
+        "de": "Steig mit Bodyweight-Training, Quests, XP und Workouts von Rang E bis SSS auf.",
+        "pt": "Suba do rank E ao SSS com treino de peso corporal, missões, XP e treino guiado."
+      },
+      "icon": "https://play-lh.googleusercontent.com/nUqaQCZL-civASCzyHrkdelu5Eb1OdLbsDmnAaeomEW8GrtIx2DdlgzehlPfm51BUmA6F_iSVCvMdtDOwmimG8c",
+      "genre": "HEALTH_AND_FITNESS",
+      "rating": null,
+      "ratingCount": 0,
+      "price": 0.0,
+      "currency": "USD",
+      "contentRating": "Everyone",
+      "developer": "Workout Master",
+      "priority": 3
+    },
+    {
+      "id": "com.MaarcoDev.CryptoMiningGameBitcoin",
+      "title": "Crypto Idle: Bitcoin Miner",
+      "short": {
+        "en": "Idle bitcoin mining tycoon in pixel art: build rigs, beat bottlenecks, HODL",
+        "it": "Tycoon idle di mining bitcoin in pixel art: costruisci rig, mina monete e HODL!",
+        "es": "Tycoon idle de minería de bitcoin en pixel art: monta rigs, mina monedas y HODL.",
+        "fr": "Tycoon idle de minage de bitcoin en pixel art : rigs, minage et HODL !",
+        "de": "Idle-Tycoon in Pixel-Art: Bau Mining-Rigs, schürfe Coins und HODL!",
+        "pt": "Tycoon idle de mineração de bitcoin em pixel art: monte rigs, minere e dê HODL!"
+      },
+      "icon": "https://play-lh.googleusercontent.com/l9jLw63GWK0b24c9EWTabV0biHIrT39mFcElEs6psQG0Lv22Mv7mSam3tSGnLOZevad_MZPSOeobUA7QRyMEfw",
+      "genre": "GAME_SIMULATION",
+      "rating": null,
+      "ratingCount": 0,
+      "price": 0.45,
+      "currency": "USD",
+      "contentRating": "Everyone",
+      "developer": "Workout Master",
+      "priority": 4
+    },
+    {
+      "id": "com.MaarcoDev.DungeonGod",
+      "title": "Dungeon God: Pixel Roguelite",
+      "short": {
+        "en": "Pixel-art roguelite: 13 heroes, 44 weapons, 5 dungeons and fearsome bosses.",
+        "it": "Roguelite in pixel art: 13 eroi, 44 armi, 5 dungeon e boss temibili.",
+        "es": "Roguelite pixel art: 13 héroes, 44 armas, 5 mazmorras y jefes temibles.",
+        "fr": "Roguelite pixel art : 13 héros, 44 armes, 5 donjons et des boss redoutables.",
+        "de": "Pixel-Roguelite: 13 Helden, 44 Waffen, 5 Dungeons und furchterregende Bosse.",
+        "pt": "Roguelite em pixel art: 13 heróis, 44 armas, 5 masmorras e chefões temíveis."
+      },
+      "icon": "https://play-lh.googleusercontent.com/29TQcQtwHU3_ARcAdWembOHo4PPgpAiSpSYsP0SM3vT6OFCi6w8LN4ub7-9adiie_cGAFgA2lIO-2qAKJN1X5g",
+      "genre": "GAME_ACTION",
+      "rating": null,
+      "ratingCount": 0,
+      "price": 0.55,
+      "currency": "USD",
+      "contentRating": "Everyone",
+      "developer": "Workout Master",
+      "appStoreId": "6823066732",
+      "priority": 2
+    },
+    {
+      "id": "com.MaarcoDev.DungeonLeveling",
+      "title": "Dungeon Gods: Solo Leveling",
+      "short": {
+        "en": "Dark fantasy action RPG: scale from Rank E to SSS between dungeons, bosses and loot.",
+        "it": "Action RPG dark fantasy: scala da Rank E a SSS tra dungeon, boss e loot.",
+        "es": "Juego de rol de acción y fantasía oscura: escala desde el rango E hasta SSS entre mazmorras, jefes y botín.",
+        "fr": "Jeu de rôle d'action et de dark fantasy : progression du rang E au rang SSS entre les donjons, les boss et le butin.",
+        "de": "Düsteres Fantasy-Action-RPG: Skalierung von Rang E bis SSS zwischen Dungeons, Bossen und Beute.",
+        "pt": "RPG de ação e fantasia sombria: evolua do Rank E ao SSS entre masmorras, chefes e itens."
+      },
+      "icon": "https://play-lh.googleusercontent.com/Rrt1K2Musw4kpXrtLCmJgGNAA2WiMaJFwOEu0bNy_g1M3jEF1d3ibLXKuN3PF9DPUZUkJvoXtvp-pezNio2jdA",
+      "genre": "GAME_ROLE_PLAYING",
+      "rating": null,
+      "ratingCount": 0,
+      "price": 1.09,
+      "currency": "USD",
+      "contentRating": "Everyone 10+",
+      "developer": "Workout Master"
+    },
+    {
+      "id": "com.MaarcoDev.HandstandMaster",
+      "title": "Handstand Master: Training",
+      "short": {
+        "en": "Guided handstand training with a personal plan, timers and progress tracking.",
+        "it": "Allenamenti guidati per la verticale con piano personale, timer e progressi.",
+        "es": "Entrenamiento guiado del pino con plan personal, temporizadores y progreso.",
+        "fr": "Entraînement guidé à l’équilibre sur les mains : programme, minuteurs, progrès.",
+        "de": "Geführtes Handstand-Training mit persönlichem Plan, Timern und Fortschritt.",
+        "pt": "Treino guiado de parada de mão com plano pessoal, cronômetros e progresso."
+      },
+      "icon": "https://play-lh.googleusercontent.com/jQmbmLmTwYvAnQqsmHueFCyON_8TGgrUJUgJ3HYb4xxckT5RxisN8uWPgmdJBDM5PzldAXKFiy-BA4FK1FJCug",
+      "genre": "HEALTH_AND_FITNESS",
+      "rating": null,
+      "ratingCount": 0,
+      "price": 0.0,
+      "currency": "USD",
+      "contentRating": "Everyone",
+      "developer": "Workout Master",
+      "priority": 3
+    },
+    {
+      "id": "com.MaarcoDev.hiddenobjects",
+      "title": "Hollowmere: Hidden Objects",
+      "short": {
+        "en": "Hidden object mystery: find clues in 15 hand-painted scenes. No ads, no energy",
+        "it": "Oggetti nascosti: indizi in 15 scene dipinte a mano. No pubblicità, no energia",
+        "es": "Objetos ocultos: pistas en 15 escenas pintadas a mano. Sin anuncios ni energía",
+        "fr": "Objets cachés : indices dans 15 scènes peintes à la main. Sans pub ni énergie",
+        "de": "Wimmelbild-Krimi: Hinweise in 15 handgemalten Szenen. Ohne Werbung & Energie",
+        "pt": "Objetos ocultos: pistas em 15 cenas pintadas à mão. Sem anúncios nem energia"
+      },
+      "icon": "https://play-lh.googleusercontent.com/wLZQTM21ehdx5RNibXcUQ6poTySajUyolcHKH6bEBt0oTHbBoxYbCfdB0r8DxQWdsdwKeJ0GhznWXTu3ySEk",
+      "genre": "GAME_PUZZLE",
+      "rating": null,
+      "ratingCount": 0,
+      "price": 0.0,
+      "currency": "USD",
+      "contentRating": "Everyone",
+      "developer": "Workout Master"
+    },
+    {
+      "id": "com.MaarcoDev.AnimeGirlfriendLove",
+      "title": "Kokoro: AI Anime Companions",
+      "short": {
+        "en": "Chat with original AI anime companions. Every message deepens your bond. 💫",
+        "it": "Chatta con compagne anime AI originali. Ogni messaggio fa crescere il legame. 💫",
+        "es": "Chatea con compañeros de anime con IA original. Cada mensaje fortalece vuestro vínculo. 💫",
+        "fr": "Discutez avec des compagnons IA originaux inspirés d'anime. Chaque message renforce vos liens. 💫",
+        "de": "Chatte mit originellen KI-Anime-Begleitern. Jede Nachricht vertieft eure Bindung. 💫",
+        "pt": "Converse com companheiros de anime originais feitos por IA. Cada mensagem fortalece seu vínculo. 💫"
+      },
+      "icon": "https://play-lh.googleusercontent.com/71UXBCZFlkKDqr8rgR6kGQnxLzubUakOPljGJuw4w-zKyQJXb3JGW9zksrveLdoPE43_dHNyzOOMbmuUBn5b_Es",
+      "genre": "ENTERTAINMENT",
+      "rating": null,
+      "ratingCount": 0,
+      "price": 0.0,
+      "currency": "USD",
+      "contentRating": "Everyone",
+      "developer": "Workout Master"
+    },
+    {
+      "id": "com.MaarcoDev.mergetycoon",
+      "title": "Merge Tycoon: Idle Evolution",
+      "short": {
+        "en": "Idle merge tycoon: evolve from Stone Age rocks to the Cosmos, even offline",
+        "it": "Gioco idle di fusione: evolvi in 8 ere, dall'Età della Pietra al Cosmo",
+        "es": "Juego idle de fusionar: evoluciona por 8 eras, de la Edad de Piedra al cosmos",
+        "fr": "Jeu idle de fusion : évoluez à travers 8 ères, de l'âge de pierre au cosmos",
+        "de": "Idle-Merge-Spiel: Entwickle dich durch 8 Epochen – von der Steinzeit ins All",
+        "pt": "Jogo idle de mesclar: evolua por 8 eras, da Idade da Pedra até o Cosmos"
+      },
+      "icon": "https://play-lh.googleusercontent.com/UoCs0bEMHICNZ2lK66M4PP6uc8kPBm_5Vutaw0tZJxfwPXknOtMBem6BHLaajlWwhTuF-IICl9hXVwUZJ2EzHQ",
+      "genre": "GAME_CASUAL",
+      "rating": null,
+      "ratingCount": 0,
+      "price": 0.0,
+      "currency": "USD",
+      "contentRating": "Everyone",
+      "developer": "Workout Master"
+    },
+    {
+      "id": "com.MaarcoDev.monvex",
+      "title": "Monvex",
+      "short": {
+        "en": "Pixel art RPG: capture, train, and evolve creatures in a world to explore.",
+        "it": "RPG in pixel art: cattura, allena ed evolvi creature in un mondo da esplorare.",
+        "es": "Juego de rol con gráficos pixelados: captura, entrena y evoluciona criaturas en un mundo para explorar.",
+        "fr": "RPG en pixel art : capturez, entraînez et faites évoluer des créatures dans un monde à explorer.",
+        "de": "Pixel-Art-RPG: Fange, trainiere und entwickle Kreaturen in einer Welt, die es zu erkunden gilt.",
+        "pt": "RPG em pixel art: capture, treine e evolua criaturas em um mundo para explorar."
+      },
+      "icon": "https://play-lh.googleusercontent.com/-kEycWj6agPWESBjs2botJeDbrzbp04endkivc_-DpN6XisyYEmUaR9N-jWNGZNyL32i6IU9KOcKd747DPiW3w",
+      "genre": "GAME_ROLE_PLAYING",
+      "rating": null,
+      "ratingCount": 0,
+      "price": 1.09,
+      "currency": "USD",
+      "contentRating": "Everyone",
+      "developer": "Workout Master"
+    },
+    {
+      "id": "com.Nexis.Nexis",
+      "title": "Nexis: Notes, Tasks & Planner",
+      "short": {
+        "en": "Message yourself: notes, tasks & reminders in a chat. Planner that works offline",
+        "it": "Note, liste, agenda, calendario e fogli di calcolo in un'app. Funziona offline.",
+        "es": "Notas, listas, agenda, calendario y hojas de cálculo en una app. Sin conexión.",
+        "fr": "Notes, listes, agenda, calendrier et tableurs en une app. Fonctionne hors ligne.",
+        "de": "Notizen, To-dos, Planer, Kalender & Tabellen in einer App. Auch offline.",
+        "pt": "Notas, listas, agenda, calendário e planilhas em um só app. Funciona offline."
+      },
+      "icon": "https://play-lh.googleusercontent.com/jqCNqv2yqbw3948QqQc3FmykLVhetIUoV_U7WpsUKDSzx3LgRdrmD4taa9CgzlZnP8LnPyMggoYUV3b86mdL5Q",
+      "genre": "PRODUCTIVITY",
+      "rating": null,
+      "ratingCount": 0,
+      "price": 0.0,
+      "currency": "USD",
+      "contentRating": "Everyone",
+      "developer": "Workout Master",
+      "appStoreId": "6823067286",
+      "priority": 1
+    },
+    {
+      "id": "com.maarcodev.openroad.pro",
+      "title": "Open Road: Open World Driving",
+      "short": {
+        "en": "Drive an endless open world of cities, villages, mountains and coasts. Offline.",
+        "it": "Esplora un mondo aperto e infinito fatto di città, villaggi, montagne e coste. Gioca offline.",
+        "es": "Recorre un mundo abierto infinito de ciudades, pueblos, montañas y costas. Sin conexión a internet.",
+        "fr": "Explorez un monde ouvert infini composé de villes, de villages, de montagnes et de côtes. Hors ligne.",
+        "de": "Erkunde eine endlose offene Welt voller Städte, Dörfer, Berge und Küsten. Offline.",
+        "pt": "Explore um mundo aberto infinito de cidades, vilas, montanhas e litorais. Disponível offline."
+      },
+      "icon": "https://play-lh.googleusercontent.com/pc2RtoXvrbm8RODhLSZ0ECqE2ctPwu-Sq8RZsD2Das3-LnwtcW5l5_anekAZxaH2cSLksLhOi2VEctaOn7HMXg",
+      "genre": "GAME_SPORTS",
+      "rating": null,
+      "ratingCount": 0,
+      "price": 0.89,
+      "currency": "USD",
+      "contentRating": "Everyone",
+      "developer": "Workout Master"
+    },
+    {
+      "id": "com.MaarcoDev.PixelRiftSurvivors",
+      "title": "Pixel Rift: Roguelite Survivor",
+      "short": {
+        "en": "Survivor roguelite: auto-attack hordes, 6 heroes, 10 weapons, 14 worlds & bosses",
+        "it": "Sopravvivi a orde infinite! Roguelite pixel art con build epiche e boss.",
+        "es": "¡Sobrevive a hordas pixeladas sin fin! Roguelite de autoataque con jefes épicos.",
+        "fr": "Survis à des hordes sans fin ! Roguelite pixel art aux builds et boss épiques.",
+        "de": "Überlebe endlose Pixelhorden! Auto-Roguelite mit epischen Builds & Bossen.",
+        "pt": "Sobreviva a hordas infinitas! Roguelite em pixel art com builds e chefes épicos."
+      },
+      "icon": "https://play-lh.googleusercontent.com/WDmiDoeSpxWkCh7PTcARNSTOBwhiijnG0v8dRO1Y4t-ytdvkoSgcKYEcZ-aDn_04Ck6NKXWe59nDkzly1tYfzjI",
+      "genre": "GAME_ACTION",
+      "rating": null,
+      "ratingCount": 0,
+      "price": 0.0,
+      "currency": "USD",
+      "contentRating": "Everyone",
+      "developer": "Workout Master",
+      "appStoreId": "6823066632"
+    },
+    {
+      "id": "com.MaarcoDev.PoliceEscape",
+      "title": "Police Escape: Car Chase Game",
+      "short": {
+        "en": "Outrun the cops in a huge open world: drift, jump ramps, pull off heists",
+        "it": "Semina la polizia! Inseguimenti in un open world: drift, salti e fughe",
+        "es": "¡Huye de la poli! Persecuciones en mundo abierto: derrapa, salta y escapa",
+        "fr": "Semez la police ! Course-poursuite en monde ouvert : drifts, sauts et évasion",
+        "de": "Hänge die Polizei ab! Open-World-Verfolgungsjagd: driften, springen, fliehen",
+        "pt": "Fuja da polícia! Perseguição em mundo aberto: drift, rampas e fugas incríveis"
+      },
+      "icon": "https://play-lh.googleusercontent.com/f0yRWNyFix7c5SsvLPb03slK1MtJVxtPBzffVMqVBnil1kGtWpBxkk3W4q4a_aKXYS_jDE_uZNLC0CxRKOeOpA",
+      "genre": "GAME_RACING",
+      "rating": null,
+      "ratingCount": 0,
+      "price": 0.0,
+      "currency": "USD",
+      "contentRating": "Everyone",
+      "developer": "Workout Master",
+      "appStoreId": "6823067352"
+    },
+    {
+      "id": "com.MaarcoDev.prankpath",
+      "title": "Prank Path: Troll Platformer",
+      "short": {
+        "en": "A troll platformer where every level lies to you. Spot the trap, reach the door!",
+        "it": "Platform troll: ogni livello ti inganna. Trova la trappola e raggiungi la porta!",
+        "es": "Un plataformas troll donde cada nivel te engaña. ¡Detecta la trampa y llega!",
+        "fr": "Un jeu de plateforme troll où chaque niveau vous ment. Repérez le piège !",
+        "de": "Troll-Plattformer, in dem jedes Level lügt. Finde die Falle, erreiche die Tür!",
+        "pt": "Um jogo de plataforma troll onde cada fase engana você. Ache a armadilha!"
+      },
+      "icon": "https://play-lh.googleusercontent.com/MCvUWtGaBhDOvMYlOyAGpQNKuNQm-tljtDbXo1bmn_zDzMoyzKCafkU7TV--Gt2KxlCmue7wELj2fbBBrZrncg",
+      "genre": "GAME_ARCADE",
+      "rating": null,
+      "ratingCount": 0,
+      "price": 0.0,
+      "currency": "USD",
+      "contentRating": "Everyone",
+      "developer": "Workout Master"
+    },
+    {
+      "id": "com.MaarcoDev.RankedWorkouts",
+      "title": "Ranked Workouts: Gym Tracker",
+      "short": {
+        "en": "Gym & calisthenics tracker: log sets, beat PRs and rank up from E to SSS",
+        "it": "Diario di allenamento gamificato: guadagna XP e sali di rango da E a SSS!",
+        "es": "Registro de entrenos gamificado: gana XP y sube de rango de E a SSS.",
+        "fr": "Suivi d'entraînement gamifié : gagnez de l'XP et passez du rang E à SSS !",
+        "de": "Gamifizierter Workout-Tracker: Sammle XP und steige von Rang E bis SSS auf!",
+        "pt": "Registro de treinos gamificado: ganhe XP e suba de rank de E até SSS!"
+      },
+      "icon": "https://play-lh.googleusercontent.com/aOjLwPagRbYAxHXr_qqkWIaSkwzM0BRy9aHpI01mVW7q6vwY0JUUuJSYA_66X-W504Xdq_HmGpA6HfT4g5qX",
+      "genre": "HEALTH_AND_FITNESS",
+      "rating": null,
+      "ratingCount": 0,
+      "price": 0.0,
+      "currency": "USD",
+      "contentRating": "Everyone",
+      "developer": "Workout Master",
+      "priority": 2
+    },
+    {
+      "id": "com.MaarcoDev.SoloLevelingWorkout",
+      "title": "Solo Grinding Workout Level Up",
+      "short": {
+        "en": "Daily workout quests: level up, rank up and get stronger every day!",
+        "it": "Missioni di allenamento quotidiane: sali di livello e rango, diventa più forte!",
+        "es": "Misiones de entreno diarias: sube de nivel y rango y hazte más fuerte cada día.",
+        "fr": "Quêtes sportives quotidiennes : gagnez des niveaux, des rangs et de la force !",
+        "de": "Tägliche Workout-Quests: Steig in Level und Rang auf, werde jeden Tag stärker!",
+        "pt": "Missões diárias de treino: suba de nível, ganhe rank e fique mais forte!"
+      },
+      "icon": "https://play-lh.googleusercontent.com/-JbOkYcyFlvjnIB26gGtvCcqEoOW-4iCUCc-zW3DInU7frInsR6IDHH-ozRnqQQ21-xfHx-fgWIBv5FFlJuyew",
+      "genre": "HEALTH_AND_FITNESS",
+      "rating": 4.5,
+      "ratingCount": 805,
+      "price": 0.0,
+      "currency": "USD",
+      "contentRating": "Everyone",
+      "developer": "Workout Master",
+      "appStoreId": "6758204739",
+      "priority": 5
+    }
+  ]
+}
